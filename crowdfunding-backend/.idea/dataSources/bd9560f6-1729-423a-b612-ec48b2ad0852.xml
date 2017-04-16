@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="marketplace@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="marketplace">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="garden_design"/>
+    <schema id="4" parent="1" name="hw2_p1_Uber_System"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="sys"/>
+    <table id="9" parent="2" name="customer"/>
+    <table id="10" parent="2" name="product"/>
+    <table id="11" parent="2" name="purchase"/>
+    <column id="12" parent="9" name="cname">
+      <Position>1</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="13" parent="9" name="address">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="14" parent="9" name="phone">
+      <Position>3</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <key id="15" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>cname</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="16" parent="10" name="pname">
+      <Position>1</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="10" name="pdescription">
+      <Position>2</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="18" parent="10" name="pprice">
+      <Position>3</Position>
+      <DataType>decimal(10,2)|0</DataType>
+    </column>
+    <column id="19" parent="10" name="pstatus">
+      <Position>4</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <key id="20" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>pname</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="21" parent="11" name="cname">
+      <Position>1</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="11" name="pname">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="11" name="putime">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="11" name="quantity">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="25" parent="11" name="puprice">
+      <Position>5</Position>
+      <DataType>decimal(10,2)|0</DataType>
+    </column>
+    <column id="26" parent="11" name="status">
+      <Position>6</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <index id="27" parent="11" name="pname">
+      <ColNames>pname</ColNames>
+    </index>
+    <key id="28" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>cname
+pname
+putime</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="29" parent="11" name="purchase_ibfk_1">
+      <ColNames>cname</ColNames>
+      <RefSchemaName>marketplace</RefSchemaName>
+      <RefTableName>customer</RefTableName>
+      <RefColNames>cname</RefColNames>
+    </foreign-key>
+    <foreign-key id="30" parent="11" name="purchase_ibfk_2">
+      <ColNames>pname</ColNames>
+      <RefSchemaName>marketplace</RefSchemaName>
+      <RefTableName>product</RefTableName>
+      <RefColNames>pname</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
