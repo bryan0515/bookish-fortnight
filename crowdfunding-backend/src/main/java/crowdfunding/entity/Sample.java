@@ -10,7 +10,6 @@ public class Sample {
     @Id
     @GeneratedValue
     private long sid;
-//    private Project project;
     private String content;
     @Lob
     private String media;

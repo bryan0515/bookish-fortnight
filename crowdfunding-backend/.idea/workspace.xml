@@ -2,55 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f728c6a-5208-4dbf-a02d-33de39a0a71b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/WebSecurityConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/controller/AuthenticationController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Customer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Label.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Project.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Sample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Student.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/repository/CustomerRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/repository/LabelRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/repository/ProjectRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/repository/SampleRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/crowdfunding/repository/CustomerRepositoryTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_24.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/hello/Application.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/hello/MessagePrinter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/hello/MessageService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/student/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/student/entity/Student.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hello/Application$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hello/Application.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hello/MessagePrinter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hello/MessageService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/student/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/student/controller/StudentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/student/dao/FakeStudentDao$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/student/dao/FakeStudentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/student/dao/MySqlStudentDao$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/student/dao/MySqlStudentDao$StudentRowMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/student/dao/MySqlStudentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/student/dao/StudentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/student/entity/Student.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/student/service/StudentService.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/student/controller/StudentController.java" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/controller/StudentController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/student/dao/FakeStudentDao.java" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/dao/FakeStudentDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/student/dao/MySqlStudentDao.java" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/dao/MySqlStudentDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/student/dao/StudentDao.java" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/dao/StudentDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/student/service/StudentService.java" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/service/StudentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../angular-crowdfunding-frontend/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../angular-crowdfunding-frontend/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../angular-crowdfunding-frontend/app/scripts/services/authentication.service.js" afterPath="$PROJECT_DIR$/../angular-crowdfunding-frontend/app/scripts/services/authentication.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/entity/LabelId.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/crowfunding_20170504.rtf" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_4_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/crowdfunding/repository/LabelRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/crowdfunding/repository/LabelRepository.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/crowdfunding/entity/Label.class" afterPath="$PROJECT_DIR$/target/classes/crowdfunding/entity/Label.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/crowdfunding/entity/LabelId.class" afterPath="$PROJECT_DIR$/target/classes/crowdfunding/entity/LabelId.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/crowdfunding/entity/Project.class" afterPath="$PROJECT_DIR$/target/classes/crowdfunding/entity/Project.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/crowdfunding/entity/Sample.class" afterPath="$PROJECT_DIR$/target/classes/crowdfunding/entity/Sample.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crowdfundingback-end.iml" afterPath="$PROJECT_DIR$/crowdfundingback-end.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/crowdfunding.txt" afterPath="$PROJECT_DIR$/src/main/resources/crowdfunding.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Label.java" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Label.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Project.java" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Project.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Sample.java" afterPath="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Sample.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -97,11 +64,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="70" column="21" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="70" selection-end-column="21" />
+            <state relative-caret-position="52">
+              <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -131,12 +98,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crowdfunding.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/crowdfunding.txt">
+      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="180" column="19" lean-forward="false" selection-start-line="180" selection-start-column="19" selection-end-line="180" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="1011">
+              <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,25 +113,25 @@
       <file leaf-file-name="Sample.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/entity/Sample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="19" column="28" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="68">
+              <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#596#597#0" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#662#663#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#810#811#0" expanded="true" />
-                <element signature="e#842#843#0" expanded="true" />
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#946#947#0" expanded="true" />
-                <element signature="e#981#982#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
-                <element signature="e#1096#1097#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#915#916#0" expanded="true" />
+                <element signature="e#950#951#0" expanded="true" />
+                <element signature="e#980#981#0" expanded="true" />
+                <element signature="e#1027#1028#0" expanded="true" />
+                <element signature="e#1065#1066#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,68 +140,62 @@
       <file leaf-file-name="Project.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/entity/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+            <state relative-caret-position="216">
+              <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#882#883#0" expanded="true" />
-                <element signature="e#911#912#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
-                <element signature="e#991#992#0" expanded="true" />
-                <element signature="e#1023#1024#0" expanded="true" />
-                <element signature="e#1051#1052#0" expanded="true" />
-                <element signature="e#1093#1094#0" expanded="true" />
-                <element signature="e#1127#1128#0" expanded="true" />
-                <element signature="e#1166#1167#0" expanded="true" />
-                <element signature="e#1201#1202#0" expanded="true" />
-                <element signature="e#1257#1258#0" expanded="true" />
-                <element signature="e#1305#1306#0" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#818#819#0" expanded="true" />
+                <element signature="e#848#849#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#910#911#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#990#991#0" expanded="true" />
+                <element signature="e#1022#1023#0" expanded="true" />
+                <element signature="e#1050#1051#0" expanded="true" />
+                <element signature="e#1092#1093#0" expanded="true" />
+                <element signature="e#1126#1127#0" expanded="true" />
+                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#1200#1201#0" expanded="true" />
+                <element signature="e#1256#1257#0" expanded="true" />
+                <element signature="e#1304#1305#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SampleRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/repository/SampleRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Label.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Label.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/entity/Label.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+            <state relative-caret-position="330">
+              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-                <element signature="e#1037#1038#0" expanded="true" />
-                <element signature="e#1094#1095#0" expanded="true" />
-                <element signature="e#1458#1459#0" expanded="true" />
-                <element signature="e#1484#1485#0" expanded="true" />
-                <element signature="e#1523#1524#0" expanded="true" />
-                <element signature="e#1553#1554#0" expanded="true" />
-                <element signature="e#1601#1602#0" expanded="true" />
-                <element signature="e#1632#1633#0" expanded="true" />
-                <element signature="e#1693#1694#0" expanded="true" />
-                <element signature="e#1733#1734#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#518#519#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LabelId.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/entity/LabelId.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-118">
+              <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#786#787#0" expanded="true" />
+                <element signature="e#824#825#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -241,20 +204,8 @@
       <file leaf-file-name="ProjectRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/repository/ProjectRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="18" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LabelRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/repository/LabelRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -283,6 +234,8 @@
       <find>slf</find>
       <find>resouce</find>
       <find>build</find>
+      <find>entity</find>
+      <find>validator</find>
     </findStrings>
     <replaceStrings>
       <replace>Student</replace>
@@ -302,7 +255,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/student/security/SecurityConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/UiApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo.java" />
         <option value="$PROJECT_DIR$/src/main/java/student/security/MvcConfig.java" />
@@ -342,17 +294,18 @@
         <option value="$PROJECT_DIR$/src/test/java/crowdfunding/repository/CustomerRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/crowdfunding/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/crowdfunding/controller/CustomerController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/crowdfunding/repository/CustomerRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/crowdfunding/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/crowdfunding/repository/ProjectRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/crowdfunding/repository/LabelRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/crowdfunding.txt" />
         <option value="$PROJECT_DIR$/src/main/java/crowdfunding/repository/SampleRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Sample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/crowdfunding/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Project.java" />
         <option value="$PROJECT_DIR$/src/main/java/crowdfunding/entity/Label.java" />
+        <option value="$PROJECT_DIR$/src/main/java/crowdfunding/entity/LabelId.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -423,7 +376,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="2" />
     <option name="y" value="23" />
-    <option name="width" value="1036" />
+    <option name="width" value="1242" />
     <option name="height" value="872" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -646,40 +599,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crowdfunding-backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crowdfunding-backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crowdfunding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Label.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1345,12 +1264,12 @@
       <workItem from="1493325293022" duration="6009000" />
       <workItem from="1493400629314" duration="26000" />
       <workItem from="1493400721174" duration="15410000" />
-      <workItem from="1493571834157" duration="42063000" />
+      <workItem from="1493571834157" duration="50139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87806000" />
+    <option name="totallyTimeSpent" value="95882000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1362,18 +1281,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="23" width="1036" height="872" extended-state="0" />
-    <editor active="true" />
+    <frame x="2" y="23" width="1242" height="872" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41538462" sideWeight="0.29074445" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41538462" sideWeight="0.28916666" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32583332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5970149" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1384,10 +1302,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.49597585" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41538462" sideWeight="0.7092555" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41538462" sideWeight="0.7108333" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.49597585" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.49597585" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.361167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29916668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.49253732" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1416,14 +1334,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1666,16 +1576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/crowdfunding/repository/CustomerRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/service/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1729,17 +1629,7 @@
         <state relative-caret-position="165">
           <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1752,18 +1642,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/repository/CustomerRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="70" column="21" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="70" selection-end-column="21" />
+        <state relative-caret-position="150">
+          <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/repository/SampleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/crowdfunding.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1456">
+          <caret line="180" column="19" lean-forward="false" selection-start-line="180" selection-start-column="19" selection-end-line="180" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/repository/ProjectRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="18" selection-end-column="32" />
+        <state relative-caret-position="1011">
+          <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1772,8 +1682,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/repository/LabelRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/repository/ProjectRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/crowdfunding/repository/CustomerRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1790,6 +1718,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/entity/Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/entity/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1800,110 +1753,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/crowdfunding.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/entity/Label.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="180" column="19" lean-forward="false" selection-start-line="180" selection-start-column="19" selection-end-line="180" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/repository/CustomerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+        <state relative-caret-position="330">
+          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/repository/SampleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/entity/Sample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/entity/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        <state relative-caret-position="216">
+          <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1051#1052#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1166#1167#0" expanded="true" />
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/entity/Label.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/crowdfunding/entity/LabelId.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+        <state relative-caret-position="-118">
+          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
-            <element signature="e#1553#1554#0" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1632#1633#0" expanded="true" />
-            <element signature="e#1693#1694#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

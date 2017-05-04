@@ -19,8 +19,7 @@ public class Project {
     @OneToMany(mappedBy = "project")
     private Collection<Sample> samples = new HashSet<>();
 
-    @ManyToMany
-    @JoinColumn(name = "pid")
+    @OneToMany(mappedBy = "labelId.project")
     private Collection<Label> labels = new HashSet<>();
 
     protected Project(){}
