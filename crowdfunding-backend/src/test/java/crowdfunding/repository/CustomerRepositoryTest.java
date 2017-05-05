@@ -1,7 +1,5 @@
 package crowdfunding.repository;
 
-import crowdfunding.entity.Customer;
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**

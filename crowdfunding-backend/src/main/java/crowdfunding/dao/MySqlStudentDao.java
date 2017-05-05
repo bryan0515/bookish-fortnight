@@ -34,19 +34,19 @@ public class MySqlStudentDao implements StudentDao {
         return jdbcTemplate.query(query, new StudentRowMapper());
     }
 
-    
+
     public Student getStudentById(int id) {
         final String query = "SELECT * FROM Student WHERE id = ?";
         return jdbcTemplate.queryForObject(query, new StudentRowMapper(), id);
     }
 
-    
+
     public void deleteStudentById(int id) {
         final String query = "DELETE FROM student WHERE id = ?";
         jdbcTemplate.update(query, id);
     }
 
-    
+
     public void updateStudent(Student student) {
         final String query = "UPDATE Student SET name = ?, course = ? WHERE id = ?";
         final long id = student.getId();
@@ -55,7 +55,7 @@ public class MySqlStudentDao implements StudentDao {
         jdbcTemplate.update(query, new Object[] {name, course, id});
     }
 
-    
+
     public void insertStudentToDB(Student student) {
         final String query = "INSERT INTO students (name, course) VALUES (?, ?)";
         final String name = student.getName();

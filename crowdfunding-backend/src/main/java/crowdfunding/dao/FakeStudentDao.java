@@ -1,8 +1,8 @@
 package crowdfunding.dao;
 
+import crowdfunding.entity.Student;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
-import crowdfunding.entity.Student;
 
 import java.util.Collection;
 import java.util.HashMap;
