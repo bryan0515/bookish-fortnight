@@ -17,14 +17,14 @@ public class Interest {
     private String interest;
 
     @ManyToMany(mappedBy = "interests")
-    private Set<Customer> customer1 = new HashSet<>();
+    private Set<Customer> customer_interest = new HashSet<>();
 
 
     protected Interest() {}
 
     public Interest(String interest, Set<Customer> customer) {
         this.interest = interest;
-        this.customer1 = customer;
+        this.customer_interest = customer;
     }
 
     public String getInterest() {
@@ -36,10 +36,10 @@ public class Interest {
     }
 
     public Set<Customer> getCustomer() {
-        return customer1;
+        return customer_interest;
     }
 
     public void setCustomer(Set<Customer> customer) {
-        this.customer1 = customer;
+        this.customer_interest = customer;
     }
 }

@@ -1,5 +1,6 @@
-package crowdfunding.entity;
+package crowdfunding.repository;
 
+import crowdfunding.entity.CreditCard;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
