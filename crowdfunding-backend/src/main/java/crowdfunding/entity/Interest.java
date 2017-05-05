@@ -1,4 +1,6 @@
-package final_project.controller;
+package crowdfunding.entity;
+
+import crowdfunding.entity.Customer;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
