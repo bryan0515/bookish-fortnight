@@ -18,6 +18,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
         <dependency>
             <groupId>com.zaxxer</groupId>
@@ -35,33 +39,14 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>4.3.7.RELEASE</version>
-        <!--   <version>4.3.7.RELEASE</version> -->
         </dependency>
-      <!-- Security  -->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.security</groupId>-->
-            <!--<artifactId>spring-security-config</artifactId>-->
-            <!--<version>4.2.1.RELEASE</version>-->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>4.2.2.RELEASE</version>
+        </dependency>
 
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.security</groupId>-->
-            <!--<artifactId>spring-security-core</artifactId>-->
-            <!--<version>4.2.1.RELEASE</version>-->
-            <!--<scope>compile</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.security</groupId>-->
-            <!--<artifactId>spring-security-web</artifactId>-->
-            <!--<version>4.2.1.RELEASE</version>-->
-            <!--<scope>compile</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.security</groupId>-->
-            <!--<artifactId>spring-security-config</artifactId>-->
-            <!--<version>3.2.4.RELEASE</version>-->
-        <!--</dependency>-->
-        <!-- Security  -->
+        <!--JPA-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
@@ -79,26 +64,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- Persistence  -->
-        <!--<dependency>-->
-            <!--<groupId>javax.persistence</groupId>-->
-            <!--<artifactId>persistence-api</artifactId>-->
-            <!--<version>1.0.2</version>-->
-            <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-        <!--&lt;!&ndash; https://mvnrepository.com/artifact/javax/javaee-api &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>javax</groupId>-->
-            <!--<artifactId>javaee-api</artifactId>-->
-            <!--<version>7.0</version>-->
-        <!--</dependency>-->
-        <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.0-api -->
-        <!--<dependency>-->
-            <!--<groupId>org.hibernate.javax.persistence</groupId>-->
-            <!--<artifactId>hibernate-jpa-2.0-api</artifactId>-->
-            <!--<version>1.0.1.Final</version>-->
-        <!--</dependency>-->
-        <!-- For repositoryRestXXXXX -->
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-rest-core</artifactId>
@@ -108,19 +73,22 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <security.version>3.2.4.RELEASE</security.version>
     </properties>
+
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable>
+                </configuration>
             </plugin>
         </plugins>
     </build>
 
-
-
+    <!--JPA-->
     <repositories>
         <repository>
             <id>spring-releases</id>

@@ -1,0 +1,17 @@
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/dao/StudentDao.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/entity/Customer.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/dao/MySqlStudentDao.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/Main.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/controller/AuthenticationController.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/repository/ProjectRepository.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/dao/FakeStudentDao.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/controller/StudentController.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/repository/SampleRepository.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/repository/CustomerRepository.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/entity/Sample.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/entity/Student.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/entity/LabelId.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/entity/Project.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/service/StudentService.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/WebSecurityConfig.java
+/Users/bryancheng/Documents/crowd-funding/crowdfunding-backend/src/main/java/crowdfunding/entity/Label.java
