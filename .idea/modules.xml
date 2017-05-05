@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/angular-crowdfunding-frontend/angular-crowdfunding-frontend.iml" filepath="$PROJECT_DIR$/angular-crowdfunding-frontend/angular-crowdfunding-frontend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crowdfunding-backend/crowdfunding-backend.iml" filepath="$PROJECT_DIR$/crowdfunding-backend/crowdfunding-backend.iml" />
-    </modules>
-  </component>
-</project>

@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: crowdfunding.repository.CustomerRepositoryTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE! - in crowdfunding.repository.CustomerRepositoryTest
-baseTest(crowdfunding.repository.CustomerRepositoryTest)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at crowdfunding.repository.CustomerRepositoryTest.baseTest(CustomerRepositoryTest.java:22)
-

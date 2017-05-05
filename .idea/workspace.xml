@@ -2,118 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bb1bae5-7d5b-4c4c-b2d9-efeeec692142" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/crowdfunding/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/student/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/student/WebSecurityConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/student/controller/AuthenticationController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/student/dao/FakeStudentDao$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/student/dao/FakeStudentDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/student/dao/MySqlStudentDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/student/entity/Student.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/crowdfunding-backend-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/crowdfunding-backend-1.0-SNAPSHOT.jar.original" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/WebSecurityConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/controller/AuthenticationController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/controller/StudentController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/dao/FakeStudentDao$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/dao/FakeStudentDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/dao/MySqlStudentDao$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/dao/MySqlStudentDao$StudentRowMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/dao/MySqlStudentDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/dao/StudentDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/entity/Customer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/entity/Label.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/entity/LabelId.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/entity/Project.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/entity/Sample.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/entity/Student.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/repository/CustomerRepository.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/repository/ProjectRepository.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/repository/SampleRepository.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding/service/StudentService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/crowdfunding-backend-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/crowdfunding-backend-1.0-SNAPSHOT.jar.original" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/test-classes/crowdfunding/repository/CustomerRepositoryTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/java/student/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/java/student/WebSecurityConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/java/student/controller/AuthenticationController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/java/student/entity/Student.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/resources/application.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/resources/crowdfunding.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/application.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/crowdfunding.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/crowdfundingback-end.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/WebSecurityConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/controller/AuthenticationController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/controller/StudentController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/dao/FakeStudentDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/dao/MySqlStudentDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/dao/StudentDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/entity/Customer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/entity/Label.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/entity/LabelId.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/entity/Project.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/entity/Sample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/entity/Student.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/repository/CustomerRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/repository/ProjectRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/repository/SampleRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/crowdfunding/service/StudentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/resources/crowdfunding.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/resources/crowfunding_20170504.rtf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/test/java/crowdfunding/repository/CustomerRepositoryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/crowdfunding.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/surefire-reports/TEST-crowdfunding.repository.CustomerRepositoryTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/surefire-reports/crowdfunding.repository.CustomerRepositoryTest.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/.idea/libraries/Maven__com_zaxxer_HikariCP_2_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_4_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_24.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/entity/Student.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/student/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/student/dao/FakeStudentDao$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/student/dao/FakeStudentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/student/dao/MySqlStudentDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/student/entity/Student.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/hello/Application.java" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/java/hello/Application.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/hello/MessagePrinter.java" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/java/hello/MessagePrinter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/hello/MessageService.java" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/java/hello/MessageService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/controller/StudentController.java" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/java/student/controller/StudentController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/dao/FakeStudentDao.java" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/java/student/dao/FakeStudentDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/dao/MySqlStudentDao.java" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/java/student/dao/MySqlStudentDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/dao/StudentDao.java" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/java/student/dao/StudentDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/service/StudentService.java" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/src/main/java/student/service/StudentService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/hello/Application$1.class" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/hello/Application$1.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/hello/Application.class" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/hello/Application.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/hello/MessagePrinter.class" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/hello/MessagePrinter.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/hello/MessageService.class" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/hello/MessageService.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/student/controller/StudentController.class" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/student/controller/StudentController.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/student/dao/MySqlStudentDao$1.class" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/student/dao/MySqlStudentDao$1.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/student/dao/MySqlStudentDao$StudentRowMapper.class" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/student/dao/MySqlStudentDao$StudentRowMapper.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/student/dao/StudentDao.class" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/student/dao/StudentDao.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/student/service/StudentService.class" afterPath="$PROJECT_DIR$/crowdfunding-backend practice/target/classes/student/service/StudentService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-crowdfunding-frontend/.idea/workspace.xml" afterPath="$PROJECT_DIR$/angular-crowdfunding-frontend/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-crowdfunding-frontend/app/scripts/services/authentication.service.js" afterPath="$PROJECT_DIR$/angular-crowdfunding-frontend/app/scripts/services/authentication.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crowdfunding-backend/.idea/workspace.xml" afterPath="$PROJECT_DIR$/crowdfunding-backend/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crowdfunding-backend/pom.xml" afterPath="$PROJECT_DIR$/crowdfunding-backend/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crowdfunding-backend/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/crowdfunding-backend/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crowdfunding-backend/target/classes/application.properties" afterPath="$PROJECT_DIR$/crowdfunding-backend/target/classes/application.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_193.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_39.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_atteo_evo_inflector_1_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_4_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_24.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_24.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_24.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_24.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_rest_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_core_2_6_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_webmvc_2_6_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_0_23_0_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_2_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_2_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-crowdfunding-frontend/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-crowdfunding-frontend/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-crowdfunding-frontend/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-crowdfunding-frontend/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="bookish-fortnight.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -135,32 +116,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowdfunding-backend/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/controller/CustomerRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="57" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/controller/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="0">
               <caret line="31" column="137" selection-start-line="31" selection-start-column="137" selection-end-line="31" selection-end-column="137" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -182,7 +141,7 @@
       <file leaf-file-name="Interest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/controller/Interest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="105">
               <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -200,10 +159,30 @@
         </entry>
       </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/crowdfunding-backend/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crowdfunding-backend.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crowdfunding-backend/crowdfunding-backend.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-crowdfunding-frontend/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -212,7 +191,7 @@
       <file leaf-file-name="Creditcard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/controller/Creditcard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="315">
               <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -235,29 +214,6 @@
             <state relative-caret-position="105">
               <caret line="7" column="79" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/ApplicationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -327,6 +283,8 @@
         <option value="$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/controller/InterestRepository.java" />
         <option value="$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/controller/Interest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/angular-crowdfunding-frontend/.gitignore" />
+        <option value="$PROJECT_DIR$/crowdfunding-backend/.gitignore" />
       </list>
     </option>
   </component>
@@ -346,7 +304,6 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-18" />
     <option name="y" value="49" />
     <option name="width" value="1394" />
     <option name="height" value="836" />
@@ -376,8 +333,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -486,59 +442,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="crowdfunding-backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="final_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bookish-fortnight" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crowdfunding-backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="final_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="angular-crowdfunding-frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -548,9 +459,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34341463" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/crowdfunding-backend" />
       <recent name="$PROJECT_DIR$/crowdfunding-backend/src/main/webapp/views" />
     </key>
   </component>
@@ -932,33 +846,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-18" y="49" width="1394" height="836" extended-state="0" />
+    <frame x="0" y="49" width="1394" height="836" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.49704143" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.45857987" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38037634" sideWeight="0.17677514" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293011" sideWeight="0.5118343" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38037634" sideWeight="0.82322484" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.49112427" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293011" sideWeight="0.48816568" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22337279" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.49704143" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24979322" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39919356" sideWeight="0.7825444" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.45857987" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38037634" sideWeight="0.82322484" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.49704143" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39919356" sideWeight="0.7825444" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1000,14 +914,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file:///private/var/folders/1y/nb9chs5557gc_7605x4m_x640000gn/T/Main.class__1_.class</url>
-          <line>13</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
@@ -1017,34 +923,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angular-crowdfunding-frontend/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-crowdfunding-frontend/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-crowdfunding-frontend/app/views/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-crowdfunding-frontend/app/scripts/controllers/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="43" column="29" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-crowdfunding-frontend/app/scripts/services/flash.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-486">
@@ -1186,137 +1064,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/dao/FakeStudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/dao/MySqlStudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/dao/FakeStudentDao.java" />
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/dao/MySqlStudentDao.java" />
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/dao/StudentDao.java" />
     <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/controller/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="37" column="5" selection-start-line="32" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="73" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/filter/Authority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/filter/MyUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/filter/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/filter/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/filter/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/entity/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/hello/CustomerDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/controller/StudentController.java">
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/service/StudentService.java" />
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/META-INF/persistence.xml" />
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/filter/Authority.java" />
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/filter/MyUserDetailsService.java" />
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/filter/SecurityConfig.java" />
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/filter/User.java" />
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/filter/WebSecurityConfig.java" />
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/entity/Student.java" />
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/hello/CustomerDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="930">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/hello/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/controller/StudentController.java" />
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/student/Main.java" />
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/hello/Application.java" />
     <entry file="file://$PROJECT_DIR$/crowdfunding-backend/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="1020">
           <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
           <folding />
         </state>
@@ -1332,7 +1113,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/ApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="210">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1343,7 +1124,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/controller/CustomerRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="135">
           <caret line="10" column="57" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1353,7 +1134,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/controller/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="0">
           <caret line="31" column="137" selection-start-line="31" selection-start-column="137" selection-end-line="31" selection-end-column="137" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1379,7 +1160,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/controller/Creditcard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="315">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1397,7 +1178,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-backend/src/main/java/final_project/controller/Interest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="105">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1413,10 +1194,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/angular-crowdfunding-frontend/.gitattributes">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="-9">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-crowdfunding-frontend/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/crowdfunding-backend.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-backend/crowdfundingback-end.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
