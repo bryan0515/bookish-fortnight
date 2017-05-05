@@ -1,4 +1,4 @@
-package final_project.controller;
+package crowdfunding.entity;
 
 /**
  * Created by han on 4/30/17.

@@ -1,4 +1,4 @@
-package final_project.controller;
+package crowdfunding.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -1,4 +1,4 @@
-package final_project.controller;
+package crowdfunding.entity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
