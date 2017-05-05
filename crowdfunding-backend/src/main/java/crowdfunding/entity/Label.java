@@ -2,29 +2,30 @@ package crowdfunding.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Collection;
+import java.util.HashSet;
 import java.util.Objects;
 
 @Entity
 public class Label {
 
-    @EmbeddedId
-    private LabelId labelId;
+    @Id
+    private String label;
 
-//    @ManyToOne
-//    @JoinColumn(name = "pid")
-//    private Project project;
+    @ManyToMany(mappedBy = "labels")
+    private Collection<Project> projects = new HashSet<>();
 
     protected Label(){}
 
-    public Label(LabelId labelId) {
-        this.labelId = labelId;
+    public Label(String label) {
+        this.label = label;
     }
 
-    public LabelId getLabelId() {
-        return labelId;
+    public String getLabel() {
+        return label;
     }
 
-    public void setLabelId(LabelId labelId) {
-        this.labelId = labelId;
+    public void setLabel(String label) {
+        this.label = label;
     }
 }

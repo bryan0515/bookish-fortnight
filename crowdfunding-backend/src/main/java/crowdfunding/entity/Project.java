@@ -19,7 +19,13 @@ public class Project {
     @OneToMany(mappedBy = "project")
     private Collection<Sample> samples = new HashSet<>();
 
-    @OneToMany(mappedBy = "labelId.project")
+    @OneToMany(mappedBy = "requestId.project")
+    private Collection<Request> requests = new HashSet<>();
+
+    @ManyToMany
+    @JoinTable(name = "Project_label",
+            joinColumns = @JoinColumn(name = "pid", referencedColumnName = "pid"),
+            inverseJoinColumns = @JoinColumn(name = "label",referencedColumnName = "label"))
     private Collection<Label> labels = new HashSet<>();
 
     protected Project(){}
