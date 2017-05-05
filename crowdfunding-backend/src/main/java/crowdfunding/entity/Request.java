@@ -1,17 +1,14 @@
 package crowdfunding.entity;
 
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.persistence.*;
 import java.util.Date;
 
-/**
- * Created by bryancheng on 2017/5/4.
- */
+@Entity
 public class Request {
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date sttime;
+
+    @EmbeddedId
+    private RequestId requestId;
+
     @Temporal(TemporalType.TIMESTAMP)
     private Date extime;
     @Temporal(TemporalType.TIMESTAMP)
@@ -19,11 +16,65 @@ public class Request {
     private int minfund;
     private int maxfund;
     @Enumerated(EnumType.STRING)
-    private Status status;
-}
+    @Column(name = "status")
+    private RequestStatus status;
 
-enum Status {
-    SUCCESS,
-    FUNDING,
-    FAILED
+    protected Request(){}
+
+    public Request(RequestId requestId, Date extime, Date endtime, int minfund, int maxfund, RequestStatus status) {
+        this.requestId = requestId;
+        this.extime = extime;
+        this.endtime = endtime;
+        this.minfund = minfund;
+        this.maxfund = maxfund;
+        this.status = status;
+    }
+
+    public RequestId getRequestId() {
+        return requestId;
+    }
+
+    public void setRequestId(RequestId requestId) {
+        this.requestId = requestId;
+    }
+
+    public Date getExtime() {
+        return extime;
+    }
+
+    public void setExtime(Date extime) {
+        this.extime = extime;
+    }
+
+    public Date getEndtime() {
+        return endtime;
+    }
+
+    public void setEndtime(Date endtime) {
+        this.endtime = endtime;
+    }
+
+    public int getMinfund() {
+        return minfund;
+    }
+
+    public void setMinfund(int minfund) {
+        this.minfund = minfund;
+    }
+
+    public int getMaxfund() {
+        return maxfund;
+    }
+
+    public void setMaxfund(int maxfund) {
+        this.maxfund = maxfund;
+    }
+
+    public RequestStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(RequestStatus status) {
+        this.status = status;
+    }
 }
