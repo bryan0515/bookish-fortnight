@@ -1,5 +1,6 @@
-package final_project.controller;
+package crowdfunding.repository;
 
+import crowdfunding.entity.CreditCard;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
