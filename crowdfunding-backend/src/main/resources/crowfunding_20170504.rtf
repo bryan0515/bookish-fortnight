@@ -6,14 +6,14 @@
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 /*\
-Data Set For Project Crowd Funding\
+Data Set For Project Crowd FUNDING\
 \
-Source Database       : crowdfunding\
+Source Database       : crowdFUNDING\
 Target Server Type    : MYSQL\
 Date: 2017-04-13 12:12:34\
 */\
 \
-/*SET FOREIGN_KEY_CHECKS=0;*/\
+SET FOREIGN_KEY_CHECKS=0;\
 \
 -- ----------------------------\
 -- Table structure for `Customer`\
@@ -395,7 +395,7 @@ CREATE TABLE `Request` (\
   `endtime` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\
   `minfund` NUMERIC(15,2) NOT NULL,\
   `maxfund` NUMERIC(15,2) NOT NULL,\
-  `status` varchar(200) DEFAULT 'funding',\
+  `status` varchar(200) DEFAULT 'FUNDING',\
   PRIMARY KEY (`pid`, `sttime`),\
   KEY `pid` (`pid`),\
   CONSTRAINT `request_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `Project` (`pid`)\
@@ -404,25 +404,25 @@ CREATE TABLE `Request` (\
 -- ----------------------------\
 -- Records of Request\
 -- ----------------------------\
-INSERT INTO `Request` VALUES ('1', '2017-04-16 12:00:00', '2019-01-01 12:00:00', NULL, '160.33', '1600.33', 'success');\
-INSERT INTO `Request` VALUES ('2', '2017-04-16 12:00:00', '2019-01-01 12:00:00', NULL, '507.98', '5060.98', 'funding');\
-INSERT INTO `Request` VALUES ('3', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '49.99', '499.99', 'funding');\
-INSERT INTO `Request` VALUES ('4', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '99.99', '999.99','funding');\
-INSERT INTO `Request` VALUES ('5', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '14.99', '159.99', 'failed');\
-INSERT INTO `Request` VALUES ('6', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '7.57', '70.57', 'success');\
-INSERT INTO `Request` VALUES ('7', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '44.45', '444.45', 'success');\
-INSERT INTO `Request` VALUES ('8', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '39.99', '399.99', 'funding');\
-INSERT INTO `Request` VALUES ('9', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '60.00', '600.00', 'failed');\
-INSERT INTO `Request` VALUES ('10', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '259.74', '2599.74', 'success');\
-INSERT INTO `Request` VALUES ('11', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '19.99', '199.99', 'funding');\
-INSERT INTO `Request` VALUES ('12', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '39.90', '399.90','funding');\
-INSERT INTO `Request` VALUES ('13', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '4.46', '44.46', 'funding');\
-INSERT INTO `Request` VALUES ('14', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '24.99', '244.99','funding');\
-INSERT INTO `Request` VALUES ('15', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '65.00', '655.00', 'failed');\
-INSERT INTO `Request` VALUES ('16', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '13.99', '133.99', 'funding');\
-INSERT INTO `Request` VALUES ('17', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '28.35', '388.35', 'funding');\
-INSERT INTO `Request` VALUES ('1',  '2017-04-17 12:00:00', '2017-04-18 12:00:00', NULL, '28.35', '388.35', 'funding');\
-INSERT INTO `Request` VALUES ('18', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '28.35', '388.35', 'funding');\
+INSERT INTO `Request` VALUES ('1', '2017-04-16 12:00:00', '2019-01-01 12:00:00', NULL, '160.33', '1600.33', 'SUCCESS');\
+INSERT INTO `Request` VALUES ('2', '2017-04-16 12:00:00', '2019-01-01 12:00:00', NULL, '507.98', '5060.98', 'FUNDING');\
+INSERT INTO `Request` VALUES ('3', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '49.99', '499.99', 'FUNDING');\
+INSERT INTO `Request` VALUES ('4', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '99.99', '999.99','FUNDING');\
+INSERT INTO `Request` VALUES ('5', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '14.99', '159.99', 'FAILED');\
+INSERT INTO `Request` VALUES ('6', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '7.57', '70.57', 'SUCCESS');\
+INSERT INTO `Request` VALUES ('7', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '44.45', '444.45', 'SUCCESS');\
+INSERT INTO `Request` VALUES ('8', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '39.99', '399.99', 'FUNDING');\
+INSERT INTO `Request` VALUES ('9', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '60.00', '600.00', 'FAILED');\
+INSERT INTO `Request` VALUES ('10', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '259.74', '2599.74', 'SUCCESS');\
+INSERT INTO `Request` VALUES ('11', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '19.99', '199.99', 'FUNDING');\
+INSERT INTO `Request` VALUES ('12', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '39.90', '399.90','FUNDING');\
+INSERT INTO `Request` VALUES ('13', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '4.46', '44.46', 'FUNDING');\
+INSERT INTO `Request` VALUES ('14', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '24.99', '244.99','FUNDING');\
+INSERT INTO `Request` VALUES ('15', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '65.00', '655.00', 'FAILED');\
+INSERT INTO `Request` VALUES ('16', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '13.99', '133.99', 'FUNDING');\
+INSERT INTO `Request` VALUES ('17', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '28.35', '388.35', 'FUNDING');\
+INSERT INTO `Request` VALUES ('1',  '2017-04-17 12:00:00', '2017-04-18 12:00:00', NULL, '28.35', '388.35', 'FUNDING');\
+INSERT INTO `Request` VALUES ('18', '2017-04-16 12:00:00', '2019-01-01 00:00:00', NULL, '28.35', '388.35', 'FUNDING');\
 \
 -- ----------------------------\
 -- Table structure for `Pledge`\
@@ -466,7 +466,7 @@ CREATE TABLE `Rate` (\
   `rate` INT NOT NULL,\
   PRIMARY KEY (`pid`, `uemail`),\
   KEY `pid` (`pid`),\
-  CONSTRAINT `rate_check_success` CHECK (0 < (SELECT COUNT(*) FROM Request r WHERE pid = r.pid and 'success')),\
+  CONSTRAINT `rate_check_SUCCESS` CHECK (0 < (SELECT COUNT(*) FROM Request r WHERE pid = r.pid and 'SUCCESS')),\
   CONSTRAINT `rate_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `Pledge` (`pid`),\
   CONSTRAINT `rate_ibfk_2` FOREIGN KEY (`uemail`) REFERENCES `Pledge` (`uemail`)\
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;\
@@ -504,15 +504,15 @@ BEGIN\
 			GROUP BY pid, `sttime`\
 		) p\
 	SET\
-		r.status = 'success'\
-	WHERE r.status = 'funding' and r.maxFund < p.curFund;\
+		r.status = 'SUCCESS'\
+	WHERE r.status = 'FUNDING' and r.maxFund < p.curFund;\
 end #\
 \
 -- ----------------------------\
--- View structure for `FundingRequest`\
+-- View structure for `FUNDINGRequest`\
 -- ----------------------------\
-DROP VIEW IF EXISTS `FundingRequest`;\
-CREATE VIEW FundingRequest AS\
+DROP VIEW IF EXISTS `FUNDINGRequest`;\
+CREATE VIEW FUNDINGRequest AS\
 SELECT	*\
 FROM	Request\
 NATURAL JOIN (\
@@ -520,4 +520,4 @@ NATURAL JOIN (\
 	FROM	`Pledge` \
 	GROUP BY pid, sttime\
 ) temp\
-WHERE status = 'funding';}
+WHERE status = 'FUNDING';}

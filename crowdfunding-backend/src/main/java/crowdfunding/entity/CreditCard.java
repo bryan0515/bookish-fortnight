@@ -5,6 +5,7 @@ package crowdfunding.entity;
  */
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -19,9 +20,11 @@ public class CreditCard {
     @Column(name = "credit_card")
     private String credit_card;
 
+    @OneToMany
+    private Collection<Pledge> pledges;
+
     @ManyToMany(mappedBy = "creditcards")
     private Set<Customer> customer = new HashSet<>();
-
 
     protected CreditCard() {}
 
