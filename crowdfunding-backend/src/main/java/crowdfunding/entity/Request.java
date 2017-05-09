@@ -1,6 +1,7 @@
 package crowdfunding.entity;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.Date;
 
 @Entity
@@ -18,6 +19,9 @@ public class Request {
     @Enumerated(EnumType.STRING)
     @Column(name = "status")
     private RequestStatus status;
+
+    @OneToMany(mappedBy = "pledgeId.request")
+    private Collection<Pledge> pledges;
 
     protected Request(){}
 
@@ -76,5 +80,12 @@ public class Request {
 
     public void setStatus(RequestStatus status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(
+                "Request[pid='%s', sttime='%s', extime='%s', endtime='%s', minfund='%s', maxfund='%s', status='%s']",
+                requestId.getProject().getPid(), requestId.getSttime(), extime, endtime, minfund, maxfund, status);
     }
 }

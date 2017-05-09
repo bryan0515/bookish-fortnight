@@ -5,6 +5,7 @@ package crowdfunding.entity;
  */
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -30,6 +31,9 @@ public class Customer {
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "Customer_phone", joinColumns = @JoinColumn(name = "uemail", referencedColumnName = "uemail"),inverseJoinColumns = @JoinColumn(name = "phone",referencedColumnName = "phone"))
     private Set<Phone> phones = new HashSet<>();
+
+    @OneToMany(mappedBy = "pledgeId.customer")
+    private Collection<Pledge> pledges;
 
     protected Customer() {}
 

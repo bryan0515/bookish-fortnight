@@ -39,10 +39,17 @@ function AuthenticationService($http, $cookies, $rootScope, $timeout, UserServic
 
     /* Use this for real authentication
      ----------------------------------------------*/
-    $http.post('students', { username: username, password: password })
-       .success(function (response) {
+    $http.post('http://localhost:8080/login', { username: username, password: password })
+       .then(function successCallback(response) {
            callback(response);
+       }, function errorCallback(response) {
+           console.log(response);
        });
+
+    // $http.get('http://localhost:8080/customers').success(function (response) {
+    //     callback(response);
+    // })
+
     // var headers = credentials ? {authorization : "Basic "
     // + btoa(credentials.username + ":" + credentials.password)
     // } : {};
