@@ -3,6 +3,7 @@ package crowdfunding.entity;
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by bryancheng on 2017/5/3.
@@ -12,7 +13,7 @@ public class Project {
     @Id
     @GeneratedValue
     private long pid;
-    private String uemail;
+//    private String uemail;
     private String pname;
     private String pdescription;
 
@@ -22,18 +23,38 @@ public class Project {
     @OneToMany(mappedBy = "requestId.project")
     private Collection<Request> requests = new HashSet<>();
 
+    @OneToMany(mappedBy = "projectComment")
+    private Set<Comment> comments = new HashSet<>();
+
     @ManyToMany
     @JoinTable(name = "Project_label",
             joinColumns = @JoinColumn(name = "pid", referencedColumnName = "pid"),
             inverseJoinColumns = @JoinColumn(name = "label",referencedColumnName = "label"))
     private Collection<Label> labels = new HashSet<>();
 
+    @ManyToOne
+    @JoinColumn(name = "uemail")
+    private Customer customer;
+
+    @ManyToMany
+    @JoinTable(name = "Likes",
+            joinColumns = @JoinColumn(name = "pid", referencedColumnName = "pid"),
+            inverseJoinColumns = @JoinColumn(name = "uemail",referencedColumnName = "uemail"))
+    private Set<Customer> customers = new HashSet<>();
+
+
     protected Project(){}
 
-    public Project(String uemail, String pname, String pdescription) {
-        this.uemail = uemail;
+    public Project(long pid, String pname, String pdescription, Collection<Sample> samples, Collection<Request> requests, Set<Comment> comments, Collection<Label> labels, Customer customer, Set<Customer> customers) {
+        this.pid = pid;
         this.pname = pname;
         this.pdescription = pdescription;
+        this.samples = samples;
+        this.requests = requests;
+        this.comments = comments;
+        this.labels = labels;
+        this.customer = customer;
+        this.customers = customers;
     }
 
     public long getPid() {
@@ -44,13 +65,13 @@ public class Project {
         this.pid = pid;
     }
 
-    public String getUemail() {
-        return uemail;
-    }
-
-    public void setUemail(String uemail) {
-        this.uemail = uemail;
-    }
+//    public String getUemail() {
+//        return uemail;
+//    }
+//
+//    public void setUemail(String uemail) {
+//        this.uemail = uemail;
+//    }
 
     public String getPname() {
         return pname;
@@ -66,5 +87,29 @@ public class Project {
 
     public void setPdescription(String pdescription) {
         this.pdescription = pdescription;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Set<Customer> getCustomers() {
+        return customers;
+    }
+
+    public void setCustomers(Set<Customer> customers) {
+        this.customers = customers;
+    }
+
+    public Set<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(Set<Comment> comments) {
+        this.comments = comments;
     }
 }

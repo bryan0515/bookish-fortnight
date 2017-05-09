@@ -21,19 +21,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private DataSource dataSource;
 
     protected void configure(HttpSecurity http) throws Exception {
-        http
-                .csrf().disable()
-                .authorizeRequests()
-                .antMatchers("/", "/home", "/login").permitAll()
-                .anyRequest().authenticated()
-                .and()
-                .httpBasic().and()
-                .formLogin()
-                .loginPage("/login")
-                .permitAll()
-                .and()
-                .logout()
-                .permitAll();
+//        http
+//                .csrf().disable()
+//                .authorizeRequests()
+//                .antMatchers("/", "/home", "/login").permitAll()
+//                .anyRequest().authenticated()
+//                .and()
+//                .httpBasic().and()
+//                .formLogin()
+//                .loginPage("/login")
+//                .permitAll()
+//                .and()
+//                .logout()
+//                .permitAll();
 
 //        http
 //                .csrf().disable()

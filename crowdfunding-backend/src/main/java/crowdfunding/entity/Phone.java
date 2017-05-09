@@ -14,13 +14,13 @@ public class Phone {
     private String phone;
 
     @ManyToMany(mappedBy = "phones")
-    private Set<Customer> customer_phone = new HashSet<>();
+    private Set<Customer> customer = new HashSet<>();
 
     protected Phone() {};
 
-    public Phone(String phone, Set<Customer> customer_phone) {
+    public Phone(String phone, Set<Customer> customer) {
         this.phone = phone;
-        this.customer_phone = customer_phone;
+        this.customer = customer;
     }
 
     public String getPhone() {
@@ -32,10 +32,10 @@ public class Phone {
     }
 
     public Set<Customer> getCustomer_phone() {
-        return customer_phone;
+        return customer;
     }
 
-    public void setCustomer_phone(Set<Customer> customer_phone) {
-        this.customer_phone = customer_phone;
+    public void setCustomer_phone(Set<Customer> customer) {
+        this.customer = customer;
     }
 }

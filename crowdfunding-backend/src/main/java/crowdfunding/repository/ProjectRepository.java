@@ -13,7 +13,7 @@ import java.util.List;
  */
 @RepositoryRestResource
 public interface ProjectRepository extends JpaRepository<Project, Long>{
-    List<Project> findByPname(@Param("pname") String name);
+//    List<Project> findByPname(@Param("pname") String name);
 
 //    @Query("SELECT p FROM Project p JOIN Label l WHERE p.pid=l.pid")
 //    List<Project> joinLabel();
