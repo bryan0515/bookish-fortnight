@@ -24,46 +24,61 @@ function AuthenticationService($http, $cookies, $rootScope, $timeout, UserServic
 
     /* Dummy authentication for testing, uses $timeout to simulate api call
      ----------------------------------------------*/
-    // $timeout(function () {
-    //   var response;
-    //   UserService.GetByUsername(username)
-    //     .then(function (user) {
-    //       if (user !== null && user.password === password) {
-    //         response = { success: true };
-    //       } else {
-    //         response = { success: false, message: 'Username or password is incorrect' };
-    //       }
-    //       callback(response);
-    //     });
-    // }, 1000);
+//     $timeout(function () {
+//       var response;
+//       UserService.GetByUsername(username)
+//         .then(function (user) {
+//           if (user !== null && user.password === password) {
+//             response = { success: true };
+//           } else {
+//             response = { success: false, message: 'Username or password is incorrect' };
+//           }
+//           callback(response);
+//         });
+//     }, 1000);
 
     /* Use this for real authentication
      ----------------------------------------------*/
+     //****Has been removed from AngularJs 1.6
     $http.post('http://localhost:8080/login', { username: username, password: password })
-       .then(function successCallback(response) {
+       .success(function (response) {
            callback(response);
-       }, function errorCallback(response) {
-           console.log(response);
        });
+ //*************V3//
+//    $http.post('http://localhost:8080', { username: username, password: password })
+//         .then(function successCallback(response) {
+//            callback(response);
+//            }, function errorCallback(response) {
+//                        console.log(response);
 
-    // $http.get('http://localhost:8080/customers').success(function (response) {
-    //     callback(response);
-    // })
+                        //*************V2//
+//       .then(function (response) {
 
-    // var headers = credentials ? {authorization : "Basic "
-    // + btoa(credentials.username + ":" + credentials.password)
-    // } : {};
-    // $http.get('user', {headers : headers}).then(function(response) {
-    //   if (response.data.name) {
-    //     $rootScope.authenticated = true;
-    //   } else {
-    //     $rootScope.authenticated = false;
-    //   }
-    //   callback && callback();
-    // }, function() {
-    //   $rootScope.authenticated = false;
-    //   callback && callback();
-    // });
+//       var data = response.data;
+//       var status = response.status;
+//       var statusText = response.statusText;
+//           var headers = response.headers;
+//           var config = response.config;
+//
+//           $scope.user = data;
+//           console.log(data);
+
+//       });
+
+//     var headers = credentials ? {authorization : "Basic "
+//     + btoa(credentials.username + ":" + credentials.password)
+//     } : {};
+//     $http.get('user', {headers : headers}).then(function(response) {
+//       if (response.data.name) {
+//         $rootScope.authenticated = true;
+//       } else {
+//         $rootScope.authenticated = false;
+//       }
+//       callback && callback();
+//     }, function() {
+//       $rootScope.authenticated = false;
+//       callback && callback();
+//     });
 
   }
 

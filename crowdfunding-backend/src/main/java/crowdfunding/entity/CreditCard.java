@@ -10,12 +10,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-//@Table(name = "creditcard")
 public class CreditCard {
 
-    //@GeneratedValue(strategy= GenerationType.AUTO)
-    //@Column(name = "uemail", columnDefinition = "VARCHAR(40) default null ")
-//    private String uemail;
     @Id
     @Column(name = "credit_card")
     private String credit_card;

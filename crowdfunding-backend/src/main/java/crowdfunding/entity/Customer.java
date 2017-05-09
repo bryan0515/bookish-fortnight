@@ -35,9 +35,24 @@ public class Customer {
     @OneToMany(mappedBy = "pledgeId.customer")
     private Collection<Pledge> pledges;
 
+    @OneToMany(mappedBy = "followId.customer")
+    private Set<Follows> follows = new HashSet<>();
+
+    @OneToMany(mappedBy = "followId.follower")
+    private Set<Follows> follower = new HashSet<>();
+
+    @OneToMany(mappedBy = "customer")
+    private Set<Project> projects = new HashSet<>();
+
+    @ManyToMany(mappedBy = "customers")
+    private Set<Project> projectsLike = new HashSet<>();
+
+    @OneToMany(mappedBy = "customerComment")
+    private Set<Comment> comments = new HashSet<>();
+
     protected Customer() {}
 
-    public Customer(String uemail, String cname, String password, String address, Set<CreditCard> creditcards, Set<Interest> interests, Set<Phone> phones) {
+    public Customer(String uemail, String cname, String password, String address, Set<CreditCard> creditcards, Set<Interest> interests, Set<Phone> phones, Set<Follows> follows, Set<Follows> follower, Set<Project> projects, Set<Project> projectsLike, Set<Comment> comments) {
         this.uemail = uemail;
         this.cname = cname;
         this.password = password;
@@ -45,7 +60,11 @@ public class Customer {
         this.creditcards = creditcards;
         this.interests = interests;
         this.phones = phones;
-//        this.interests = new HashSet<>();
+        this.follows = follows;
+        this.follower = follower;
+        this.projects = projects;
+        this.projectsLike = projectsLike;
+        this.comments = comments;
     }
 
     public String getUemail() {
@@ -103,26 +122,53 @@ public class Customer {
     public void setPhones(Set<Phone> phones) {
         this.phones = phones;
     }
-//    @OneToMany(mappedBy = "customer")
-//    private Set<CreditCard> creditCards = new HashSet<>();
-//
-//    protected Customer() {}
-//
-//    public Customer(String uemail, String cname, String password, String address, Set<CreditCard> creditCards) {
-//        this.uemail = uemail;
-//        this.cname = cname;
-//        this.password = password;
-//        this.address = address;
-//        this.creditCards = creditCards;
-//    }
 
-
-    @Override
-    public String toString() {
-//        return String.format(
-//                "Customer[uemail=%s, cname='%s', password='%s', addess='%s']",
-//                uemail, cname, password, address);
-//        return "uemail " + uemail + "cname "+ cname + "creditcard:" + ((getCredictCard() == null) ? null : getCredictCard()) ;
-        return "uemail " + uemail + " cname "+ cname;
+    public Set<Follows> getFollows() {
+        return follows;
     }
+
+    public void setFollows(Set<Follows> follows) {
+        this.follows = follows;
+    }
+
+    public Set<Follows> getFollower() {
+        return follower;
+    }
+
+    public void setFollower(Set<Follows> follower) {
+        this.follower = follower;
+    }
+
+    public Set<Project> getProjects() {
+        return projects;
+    }
+
+    public void setProjects(Set<Project> projects) {
+        this.projects = projects;
+    }
+
+    public Set<Project> getProjectsLike() {
+        return projectsLike;
+    }
+
+    public void setProjectsLike(Set<Project> projectsLike) {
+        this.projectsLike = projectsLike;
+    }
+
+    public Set<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(Set<Comment> comments) {
+        this.comments = comments;
+    }
+
+    //    @Override
+//    public String toString() {
+////        return String.format(
+////                "Customer[uemail=%s, cname='%s', password='%s', addess='%s']",
+////                uemail, cname, password, address);
+////        return "uemail " + uemail + "cname "+ cname + "creditcard:" + ((getCredictCard() == null) ? null : getCredictCard()) ;
+//        return "uemail " + uemail + " cname "+ cname;
+//    }
 }
