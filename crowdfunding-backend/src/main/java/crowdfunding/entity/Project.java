@@ -11,11 +11,14 @@ import java.util.Set;
 @Entity
 public class Project {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private long pid;
-//    private String uemail;
     private String pname;
     private String pdescription;
+
+    @ManyToOne
+    @JoinColumn(name = "uemail")
+    private Customer customer;
 
     @OneToMany(mappedBy = "project")
     private Collection<Sample> samples = new HashSet<>();
@@ -32,10 +35,6 @@ public class Project {
             inverseJoinColumns = @JoinColumn(name = "label",referencedColumnName = "label"))
     private Collection<Label> labels = new HashSet<>();
 
-    @ManyToOne
-    @JoinColumn(name = "uemail")
-    private Customer customer;
-
     @ManyToMany
     @JoinTable(name = "Likes",
             joinColumns = @JoinColumn(name = "pid", referencedColumnName = "pid"),
@@ -45,16 +44,10 @@ public class Project {
 
     protected Project(){}
 
-    public Project(long pid, String pname, String pdescription, Collection<Sample> samples, Collection<Request> requests, Set<Comment> comments, Collection<Label> labels, Customer customer, Set<Customer> customers) {
-        this.pid = pid;
+    public Project(String pname, String pdescription, Customer customer) {
         this.pname = pname;
         this.pdescription = pdescription;
-        this.samples = samples;
-        this.requests = requests;
-        this.comments = comments;
-        this.labels = labels;
         this.customer = customer;
-        this.customers = customers;
     }
 
     public long getPid() {
