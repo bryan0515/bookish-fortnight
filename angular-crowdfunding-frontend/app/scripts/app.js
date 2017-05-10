@@ -18,22 +18,22 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $httpProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
-        controllerAs: 'main'
+        controllerAs: 'vm'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
-        controllerAs: 'about'
+        controllerAs: 'vm'
       })
       .when('/test', {
               templateUrl: 'views/test.html',
               controller: 'TestCtrl',
-              controllerAs: 'test'
+              controllerAs: 'vm'
       })
       .when('/login', {
         templateUrl: 'views/login.html',
@@ -53,6 +53,8 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+
+//      $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
   })
   .run(function run($rootScope, $location, $cookies, $http) {
     // keep user logged in after page refresh

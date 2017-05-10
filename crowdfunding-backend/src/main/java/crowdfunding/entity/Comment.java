@@ -65,29 +65,29 @@ public class Comment implements Serializable{
         this.comment = comment;
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//
-//        Comment comment1 = (Comment) o;
-//
-//        if (customerComment != null ? !customerComment.equals(comment1.customerComment) : comment1.customerComment != null)
-//            return false;
-//        if (projectComment != null ? !projectComment.equals(comment1.projectComment) : comment1.projectComment != null)
-//            return false;
-//        if (commenttime != null ? !commenttime.equals(comment1.commenttime) : comment1.commenttime != null)
-//            return false;
-//        return comment != null ? comment.equals(comment1.comment) : comment1.comment == null;
-//
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        int result = customerComment != null ? customerComment.hashCode() : 0;
-//        result = 31 * result + (projectComment != null ? projectComment.hashCode() : 0);
-//        result = 31 * result + (commenttime != null ? commenttime.hashCode() : 0);
-//        result = 31 * result + (comment != null ? comment.hashCode() : 0);
-//        return result;
-//    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Comment comment1 = (Comment) o;
+
+        if (customerComment != null ? !customerComment.equals(comment1.customerComment) : comment1.customerComment != null)
+            return false;
+        if (projectComment != null ? !projectComment.equals(comment1.projectComment) : comment1.projectComment != null)
+            return false;
+        if (commenttime != null ? !commenttime.equals(comment1.commenttime) : comment1.commenttime != null)
+            return false;
+        return comment != null ? comment.equals(comment1.comment) : comment1.comment == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = customerComment != null ? customerComment.hashCode() : 0;
+        result = 31 * result + (projectComment != null ? projectComment.hashCode() : 0);
+        result = 31 * result + (commenttime != null ? commenttime.hashCode() : 0);
+        result = 31 * result + (comment != null ? comment.hashCode() : 0);
+        return result;
+    }
 }

@@ -17,29 +17,29 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.sql.DataSource;
 
-@Order(1)
-@Configuration
-@EnableWebSecurity
+//@Order(1)
+//@Configuration
+//@EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Qualifier("dataSource")
     @Autowired
     private DataSource dataSource;
-
+    @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
-                .csrf().disable()
-                .authorizeRequests()
-                .antMatchers("/", "/home", "/login").permitAll()
-                .anyRequest().authenticated()
-                .and()
-                .httpBasic().and()
-                .formLogin()
-                .loginPage("/login")
-                .permitAll()
-                .and()
-                .logout()
-                .permitAll();
+//        http
+//                .csrf().disable()
+//                .authorizeRequests()
+//                .antMatchers("/", "/home", "/login").permitAll()
+//                .anyRequest().authenticated()
+//                .and()
+//                .httpBasic().and()
+//                .formLogin()
+//                .loginPage("/login")
+//                .permitAll()
+//                .and()
+//                .logout()
+//                .permitAll();
 //                .and()
 //                .csrf().csrfTokenRepository(csrfTokenRepository()).and()
 //                .addFilterAfter(new CsrfHeaderFilter(), CsrfFilter.class);
@@ -91,21 +91,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
-    private CsrfTokenRepository csrfTokenRepository() {
-        HttpSessionCsrfTokenRepository repository = new HttpSessionCsrfTokenRepository();
-        repository.setHeaderName("X-XSRF-TOKEN");
-        return repository;
-    }
-
+//    private CsrfTokenRepository csrfTokenRepository() {
+//        HttpSessionCsrfTokenRepository repository = new HttpSessionCsrfTokenRepository();
+//        repository.setHeaderName("X-XSRF-TOKEN");
+//        return repository;
+//    }
+    @Override
     @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+    public void configure(AuthenticationManagerBuilder auth) throws Exception {
 //        auth
 //                .inMemoryAuthentication()
-//                .withUser("user").password("password").roles("USER");
-        auth
-                .jdbcAuthentication()
-                .dataSource(dataSource)
-                .usersByUsernameQuery("select uemail, password, 1 from Customer where uemail=?")
-                .authoritiesByUsernameQuery("select uemail, 'USER' from Customer where uemail=?");
+////                .withUser("user").password("password").roles("USER");
+//        auth
+//                .jdbcAuthentication()
+//                .dataSource(dataSource)
+//                .usersByUsernameQuery("select uemail, password, 1 from Customer where uemail=?")
+//                .authoritiesByUsernameQuery("select uemail, 'USER' from Customer where uemail=?");
     }
 }

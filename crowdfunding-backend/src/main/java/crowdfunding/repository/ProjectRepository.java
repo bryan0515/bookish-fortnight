@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -17,4 +18,8 @@ public interface ProjectRepository extends JpaRepository<Project, Long>{
 
 //    @Query("SELECT p FROM Project p JOIN Label l WHERE p.pid=l.pid")
 //    List<Project> joinLabel();
+
+//    @Query(value="SELECT p FROM Project p WHERE pid = 1")
+////            "SELECT p FROM Project p INNER JOIN p.requestId r WHERE r.pid = :pid")
+//    Collection<Project> findProjectsByFundingAmount();
 }

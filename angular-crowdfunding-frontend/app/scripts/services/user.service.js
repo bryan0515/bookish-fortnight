@@ -14,6 +14,9 @@ UserService.$inject = ['$http'];
 function UserService($http) {
   var service = {};
 
+  service.GetPledge = GetPledge;
+  service.GetProject = GetProject;
+  service.GetCustomer = GetCustomer;
   service.GetAll = GetAll;
   service.GetById = GetById;
   service.GetByUsername = GetByUsername;
@@ -22,6 +25,27 @@ function UserService($http) {
   service.Delete = Delete;
 
   return service;
+
+
+  function GetProject() {
+      return $http.get('http://localhost:8080/fundingviews').then(handleSuccess, handleError('Error'));
+  }
+  function GetCustomer() {
+//     var auth = $base64.encode("user:e9d48e2c-4f65-4e54-9d0a-daaa17f909cb");
+//     $http.defaults.headers.common['Authorization'] = 'Basic ' + auth;
+//    return $http.get('http://localhost:8080/customers').then(handleSuccess, handleError('Error'));
+    return $http.get('http://localhost:8080/customers').then(handleSuccess, handleError('Error'));
+  }
+
+  function GetPledge(pledge,fund) {
+      return $http({
+          url: 'http://localhost:8080/createPledge',
+          method: "POST",
+          params: {
+          pname: pledge,
+          amount: fund
+          }})
+  }
 
   function GetAll() {
     return $http.get('/api/users').then(handleSuccess, handleError('Error getting all users'));

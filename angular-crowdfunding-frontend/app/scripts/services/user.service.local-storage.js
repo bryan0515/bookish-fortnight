@@ -7,14 +7,15 @@
  * # user.service.localStorage
  * Service in the documentsApp.
  */
-angular.module('documentsApp')
-  .factory('UserService', UserService);
-
-UserService.$inject = ['$timeout', '$filter', '$q'];
-function UserService($timeout, $filter, $q) {
+ angular.module('documentsApp')
+   .factory('UserLocalService', UserLocalService);
+UserLocalService.$inject = ['$timeout', '$filter', '$q', '$http'];
+function UserLocalService($timeout, $filter, $q, $http) {
 
   var service = {};
 
+    service.GetCustomer = GetCustomer;
+    service.GetProject = GetProject;
   service.GetAll = GetAll;
   service.GetById = GetById;
   service.GetByUsername = GetByUsername;
@@ -23,6 +24,16 @@ function UserService($timeout, $filter, $q) {
   service.Delete = Delete;
 
   return service;
+
+  function GetProject() {
+    return $http.get('http://localhost:8080/fundingviews').then(handleSuccess, handleError('Error'));
+  }
+    function GetCustomer() {
+//        var auth = $base64.encode("user:e9d48e2c-4f65-4e54-9d0a-daaa17f909cb");
+//             $http.defaults.headers.common['Authorization'] = 'Basic ' + auth;
+//        return $http.get('http://user:e9d48e2c-4f65-4e54-9d0a-daaa17f909cb@localhost:8080/customers').then(handleSuccess, handleError('Error'));
+      return $http.get('http://localhost:8080/customers').then(handleSuccess, handleError('Error'));
+      }
 
   function GetAll() {
     var deferred = $q.defer();
@@ -120,4 +131,17 @@ function UserService($timeout, $filter, $q) {
   function setUsers(users) {
     localStorage.users = JSON.stringify(users);
   }
+
+
+
+
+  function handleSuccess(res) {
+      return res.data;
+    }
+
+    function handleError(error) {
+      return function () {
+        return { success: false, message: error };
+      };
+    }
 }
