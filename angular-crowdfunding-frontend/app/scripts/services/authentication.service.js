@@ -22,6 +22,27 @@ function AuthenticationService($http, $cookies, $rootScope, $timeout, UserServic
 
   function Login(username, password, callback) {
 
+      console.log("LOGIN: user: "+username+" password: "+password);
+
+      $timeout(function () {
+          var manualResponse;
+          manualResponse = {success: true, message: "init"};
+          $http({
+              url: 'http://localhost:8080/customers/search/findCustomerByUemailAndPassword',
+              method: "GET",
+              params: {username: username, password: password}
+          }).then(
+              function handleSuccess (response) {
+                  manualResponse = {success: true, message: response.data};
+                  console.log("Yes");
+                  callback(manualResponse);
+            }, function handleFailure() {
+              console.log("No");
+              manualResponse = {success: false, message: 'Username or password is incorrect'};
+              callback(manualResponse);
+          });
+      }, 1000);
+
     /* Dummy authentication for testing, uses $timeout to simulate api call
      ----------------------------------------------*/
 //     $timeout(function () {
@@ -40,45 +61,17 @@ function AuthenticationService($http, $cookies, $rootScope, $timeout, UserServic
     /* Use this for real authentication
      ----------------------------------------------*/
      //****Has been removed from AngularJs 1.6
-    $http.post('http://localhost:8080/login', { username: username, password: password })
-       .success(function (response) {
-           callback(response);
-       });
- //*************V3//
-//    $http.post('http://localhost:8080', { username: username, password: password })
-//         .then(function successCallback(response) {
-//            callback(response);
-//            }, function errorCallback(response) {
-//                        console.log(response);
+    // $http.post('http://localhost:8080/login', { username: username, password: password })
+    //    .success(function (response) {
+    //        callback(response);
+    //    });
 
-                        //*************V2//
-//       .then(function (response) {
-
-//       var data = response.data;
-//       var status = response.status;
-//       var statusText = response.statusText;
-//           var headers = response.headers;
-//           var config = response.config;
-//
-//           $scope.user = data;
-//           console.log(data);
-
-//       });
-
-//     var headers = credentials ? {authorization : "Basic "
-//     + btoa(credentials.username + ":" + credentials.password)
-//     } : {};
-//     $http.get('user', {headers : headers}).then(function(response) {
-//       if (response.data.name) {
-//         $rootScope.authenticated = true;
-//       } else {
-//         $rootScope.authenticated = false;
-//       }
-//       callback && callback();
-//     }, function() {
-//       $rootScope.authenticated = false;
-//       callback && callback();
-//     });
+   // $http.post('http://localhost:8080/login', { username: username, password: password })
+   //      .then(function successCallback(response) {
+   //         callback(response);
+   //         }, function errorCallback(response) {
+   //          console.log(response);
+   //      })
 
   }
 

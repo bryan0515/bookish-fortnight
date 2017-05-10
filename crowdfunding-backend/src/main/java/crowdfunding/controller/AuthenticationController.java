@@ -1,9 +1,8 @@
 package crowdfunding.controller;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.security.Principal;
 
 /**
  * Created by bryancheng on 2017/4/29.
@@ -11,7 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AuthenticationController {
 
-//    @RequestMapping(path = "/login", method = RequestMethod.GET)
+    @RequestMapping("/user")
+    public Principal user(Principal user) {
+        return user;
+    }
+//    @CrossOrigin(origins = "http://localhost:9000")
+////    @RequestMapping(path = "/login", method = RequestMethod.GET)
+//    @GetMapping("/greeting")
 //    public String login() {
 //        return "Login Page";
 //    }

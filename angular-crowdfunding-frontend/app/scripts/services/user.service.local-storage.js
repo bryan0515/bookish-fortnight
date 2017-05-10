@@ -8,10 +8,10 @@
  * Service in the documentsApp.
  */
 angular.module('documentsApp')
-  .factory('UserService', UserService);
+  .factory('UserLocalService', UserLocalService);
 
-UserService.$inject = ['$timeout', '$filter', '$q'];
-function UserService($timeout, $filter, $q) {
+UserLocalService.$inject = ['$timeout', '$filter', '$q'];
+function UserLocalService($timeout, $filter, $q) {
 
   var service = {};
 
@@ -21,8 +21,17 @@ function UserService($timeout, $filter, $q) {
   service.Create = Create;
   service.Update = Update;
   service.Delete = Delete;
+  service.GetByUser = GetByUser;
 
   return service;
+
+    function GetByUser(username, password) {
+        return $http({
+            url: 'http://localhost:8080/customers/search/findCustomerByUemailAndPassword',
+            method: "GET",
+            params: {username: username, password: password}
+        }).then(handleSuccess, handleError('Error getting user details'));
+    }
 
   function GetAll() {
     var deferred = $q.defer();

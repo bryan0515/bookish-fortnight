@@ -71,8 +71,12 @@
             <artifactId>json</artifactId>
             <version>20090211</version>
         </dependency>
-
-
+        <!--&lt;!&ndash;cors&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>gs-rest-service-cors</artifactId>-->
+            <!--<version>0.1.0</version>-->
+        <!--</dependency>-->
     </dependencies>
 
     <properties>
