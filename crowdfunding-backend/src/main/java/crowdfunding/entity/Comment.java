@@ -8,7 +8,7 @@ import java.util.Date;
  * Created by han on 5/8/17.
  */
 @Entity
-public class Comment implements Serializable{
+public class Comment implements Serializable {
     @Id
     @ManyToOne
     @JoinColumn(name = "uemail")

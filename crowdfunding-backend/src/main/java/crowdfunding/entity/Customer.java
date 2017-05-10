@@ -36,35 +36,35 @@ public class Customer {
     private Collection<Pledge> pledges;
 
     @OneToMany(mappedBy = "followId.customer")
-    private Set<Follows> follows = new HashSet<>();
+    private Set<Follows> follows;
 
     @OneToMany(mappedBy = "followId.follower")
-    private Set<Follows> follower = new HashSet<>();
+    private Set<Follows> follower;
 
     @OneToMany(mappedBy = "customer")
-    private Set<Project> projects = new HashSet<>();
+    private Set<Project> projects;
 
     @ManyToMany(mappedBy = "customers")
-    private Set<Project> projectsLike = new HashSet<>();
+    private Set<Project> projectsLike;
 
     @OneToMany(mappedBy = "customerComment")
-    private Set<Comment> comments = new HashSet<>();
+    private Set<Comment> comments;
 
     protected Customer() {}
 
-    public Customer(String uemail, String cname, String password, String address, Set<CreditCard> creditcards, Set<Interest> interests, Set<Phone> phones, Set<Follows> follows, Set<Follows> follower, Set<Project> projects, Set<Project> projectsLike, Set<Comment> comments) {
+    public Customer(String uemail, String cname, String password, String address) {
         this.uemail = uemail;
         this.cname = cname;
         this.password = password;
         this.address = address;
-        this.creditcards = creditcards;
-        this.interests = interests;
-        this.phones = phones;
-        this.follows = follows;
-        this.follower = follower;
-        this.projects = projects;
-        this.projectsLike = projectsLike;
-        this.comments = comments;
+        this.creditcards = new HashSet<>();
+        this.interests = new HashSet<>();
+        this.phones = new HashSet<>();
+        this.follows = new HashSet<>();
+        this.follower = new HashSet<>();
+        this.projects = new HashSet<>();
+        this.projectsLike = new HashSet<>();
+        this.comments = new HashSet<>();
     }
 
     public String getUemail() {

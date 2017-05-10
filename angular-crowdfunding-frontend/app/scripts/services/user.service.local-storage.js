@@ -7,10 +7,11 @@
  * # user.service.localStorage
  * Service in the documentsApp.
  */
- angular.module('documentsApp')
-   .factory('UserLocalService', UserLocalService);
-UserLocalService.$inject = ['$timeout', '$filter', '$q', '$http'];
-function UserLocalService($timeout, $filter, $q, $http) {
+angular.module('documentsApp')
+  .factory('UserLocalService', UserLocalService);
+
+UserLocalService.$inject = ['$timeout', '$filter', '$q'];
+function UserLocalService($timeout, $filter, $q) {
 
   var service = {};
 
@@ -22,6 +23,7 @@ function UserLocalService($timeout, $filter, $q, $http) {
   service.Create = Create;
   service.Update = Update;
   service.Delete = Delete;
+  service.GetByUser = GetByUser;
 
   return service;
 
@@ -34,6 +36,14 @@ function UserLocalService($timeout, $filter, $q, $http) {
 //        return $http.get('http://user:e9d48e2c-4f65-4e54-9d0a-daaa17f909cb@localhost:8080/customers').then(handleSuccess, handleError('Error'));
       return $http.get('http://localhost:8080/customers').then(handleSuccess, handleError('Error'));
       }
+
+    function GetByUser(username, password) {
+        return $http({
+            url: 'http://localhost:8080/customers/search/findCustomerByUemailAndPassword',
+            method: "GET",
+            params: {username: username, password: password}
+        }).then(handleSuccess, handleError('Error getting user details'));
+    }
 
   function GetAll() {
     var deferred = $q.defer();
@@ -131,17 +141,4 @@ function UserLocalService($timeout, $filter, $q, $http) {
   function setUsers(users) {
     localStorage.users = JSON.stringify(users);
   }
-
-
-
-
-  function handleSuccess(res) {
-      return res.data;
-    }
-
-    function handleError(error) {
-      return function () {
-        return { success: false, message: error };
-      };
-    }
 }
