@@ -15,6 +15,8 @@ function UserLocalService($timeout, $filter, $q) {
 
   var service = {};
 
+    service.GetCustomer = GetCustomer;
+    service.GetProject = GetProject;
   service.GetAll = GetAll;
   service.GetById = GetById;
   service.GetByUsername = GetByUsername;
@@ -24,6 +26,16 @@ function UserLocalService($timeout, $filter, $q) {
   service.GetByUser = GetByUser;
 
   return service;
+
+  function GetProject() {
+    return $http.get('http://localhost:8080/fundingviews').then(handleSuccess, handleError('Error'));
+  }
+    function GetCustomer() {
+//        var auth = $base64.encode("user:e9d48e2c-4f65-4e54-9d0a-daaa17f909cb");
+//             $http.defaults.headers.common['Authorization'] = 'Basic ' + auth;
+//        return $http.get('http://user:e9d48e2c-4f65-4e54-9d0a-daaa17f909cb@localhost:8080/customers').then(handleSuccess, handleError('Error'));
+      return $http.get('http://localhost:8080/customers').then(handleSuccess, handleError('Error'));
+      }
 
     function GetByUser(username, password) {
         return $http({

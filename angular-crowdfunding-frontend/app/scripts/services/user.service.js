@@ -14,28 +14,42 @@ UserService.$inject = ['$http'];
 function UserService($http) {
     var service = {};
 
-    service.GetAll = GetAll;
-    service.GetById = GetById;
-    service.GetByUsername = GetByUsername;
-    service.Create = Create;
-    service.Update = Update;
-    service.Delete = Delete;
-    service.GetByUser = GetByUser;
-    service.CreateProject = CreateProject;
+  service.GetPledge = GetPledge;
+  service.GetProject = GetProject;
+  service.GetCustomer = GetCustomer;
+  service.GetAll = GetAll;
+  service.GetById = GetById;
+  service.GetByUsername = GetByUsername;
+  service.Create = Create;
+  service.Update = Update;
+  service.Delete = Delete;
 
     return service;
 
-    function GetByUser(username, password) {
-        return $http({
-            url: 'http://localhost:8080/customers/search/findCustomerByUemailAndPassword',
-            method: "GET",
-            params: {username: username, password: password}
-        }).then(handleSuccess, handleError('Error getting user details'));
-    }
 
-    function GetAll() {
-        return $http.get('/api/users').then(handleSuccess, handleError('Error getting all users'));
-    }
+  function GetProject() {
+      return $http.get('http://localhost:8080/fundingviews').then(handleSuccess, handleError('Error'));
+  }
+  function GetCustomer() {
+//     var auth = $base64.encode("user:e9d48e2c-4f65-4e54-9d0a-daaa17f909cb");
+//     $http.defaults.headers.common['Authorization'] = 'Basic ' + auth;
+//    return $http.get('http://localhost:8080/customers').then(handleSuccess, handleError('Error'));
+    return $http.get('http://localhost:8080/customers').then(handleSuccess, handleError('Error'));
+  }
+
+  function GetPledge(pledge,fund) {
+      return $http({
+          url: 'http://localhost:8080/createPledge',
+          method: "POST",
+          params: {
+          pname: pledge,
+          amount: fund
+          }})
+  }
+
+  function GetAll() {
+    return $http.get('/api/users').then(handleSuccess, handleError('Error getting all users'));
+  }
 
     function GetById(id) {
         return $http.get('/api/users/' + id).then(handleSuccess, handleError('Error getting user by id'));

@@ -32,8 +32,44 @@
 </div>
 
 <div class="row marketing">
-    <table>
-
+  <h4>Popular Project!!</h4>
+  <p>Here is the test data: </p>
+  <!--<p>{{vm.testdata}}</p>-->
+    <!--<li ng-repeat="u in user">-->
+    <!--<li ng-repeat="x in project">-->
+      <!--<p>{{x.pname}}</p>-->
+    <!--</li>-->
+    <table class="table table-striped">
+      <tr>
+        <th>Project Name</th>
+        <th>End Time</th>
+        <th>Require Fund</th>
+        <th>Current Fund</th>
+        <th>Achieve rate</th>
+        <th>Pledge!!</th>
+      </tr>
+      <!--<div ng-repeat="project in author_group" class="authorAndTagGroup">-->
+      <tr ng-repeat="(key, x) in project">
+        <!--<label class="col-sm-3 control-label">{{key}}</label>-->
+        <td>{{ x.pname }}</td>
+        <td>{{ x.endtime }}</td>
+        <td>{{ x.minfund }}</td>
+        <td>{{ x.curfund }}</td>
+        <td>{{ x.percentage }}</td>
+        <!--<td><button  ng-click="vm.ShowMeDate()" class="btn btn-primary">Click me!</button></td>-->
+        <td>
+          <form name = "test_form" ng-submit="addItem()">
+            Amount:
+            <input type = "number" name = "amount" id = "amount" class="form-control" ng-init="vm.pledge.amount = 10" ng-model="vm.pledge.amount">
+            <!--<input type="hidden" name="pid" value={{x.pid}}>-->
+            <input type="hidden" name="pname" id = "pname" value="{{x.pname}}" class="form-control" ng-model = "vm.pledge.pname">
+            <br>
+            <input class="btn btn-primary" type="submit" value = "Pledge" ng-click="vm.ShowMeDate(x.pname)"/>
+          </form>
+        </td>
+      </tr>
+        <!--{{author_group}}-->
+      <!--</div>-->
     </table>
 
 </div>
