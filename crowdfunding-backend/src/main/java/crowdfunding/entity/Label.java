@@ -1,10 +1,8 @@
 package crowdfunding.entity;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.Objects;
 
 @Entity
 public class Label {
