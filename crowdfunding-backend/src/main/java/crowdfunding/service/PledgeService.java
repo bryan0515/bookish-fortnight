@@ -16,10 +16,8 @@ public class PledgeService {
     @Autowired
     private PledgeRepository pledgeRepository;
 
-    public String addPledge(Pledge pledge) {
+    public void addPledge(Pledge pledge) {
         pledgeRepository.save(pledge);
-
-        return "";
     }
 
 }

@@ -4,6 +4,7 @@ package crowdfunding.entity;
  * Created by han on 5/3/17.
  */
 
+
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.HashSet;

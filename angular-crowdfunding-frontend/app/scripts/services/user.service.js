@@ -14,6 +14,7 @@ UserService.$inject = ['$http'];
 function UserService($http) {
     var service = {};
 
+    service.SearchProject = SearchProject;
     service.GetPledge = GetPledge;
     service.GetProject = GetProject;
     service.GetCustomer = GetCustomer;
@@ -96,12 +97,12 @@ function UserService($http) {
         return $http.get('http://localhost:8080/fundingviews').then(handleSuccess, handleError('Error'));
     }
 
-    function GetPledge(pname, amount, username) {
+    function GetPledge(pid, amount, username) {
         return $http({
             url: 'http://localhost:8080/createPledge',
             method: "POST",
             params: {
-                pname: pname,
+                pid: pid,
                 amount: amount,
                 username: username
             }
@@ -112,6 +113,18 @@ function UserService($http) {
         var url = 'http://localhost:8080/customers/' + username + '/projects';
         return $http.get(url).then(handleSuccess, handleError('Error'));
     }
+
+    function SearchProject(keyword) {
+            return $http({
+//                url: 'http://localhost:8080/findKeyword',
+                url: 'http://localhost:8080/projects/search/findProjectsByPdescriptionContaining',
+                method: "GET",
+                params: {
+                    keyword: keyword
+
+                }
+            }).then(handleSuccess, handleError('Error to search a keyoword'));
+        }
 
     function getProject(pid) {
         var url = 'http://localhost:8080/projects/' + pid;
