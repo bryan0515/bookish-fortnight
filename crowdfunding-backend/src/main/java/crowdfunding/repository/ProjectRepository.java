@@ -1,6 +1,5 @@
 package crowdfunding.repository;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import crowdfunding.entity.Project;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -28,4 +27,9 @@ public interface ProjectRepository extends JpaRepository<Project, Long>{
 
 
 //      Collection<Project> findByMinfundGreaterThan(int keyword);
+
+    @Query(value="SELECT p FROM Project p WHERE p.pdescription like CONCAT('%', :search, '%')")
+    Collection<Project> searchProjectWithNativeQuery(@Param("search") String search);
+
+
 }

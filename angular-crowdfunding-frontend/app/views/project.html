@@ -1,8 +1,33 @@
 <div class="jumbotron" ng-cloak>
-    <h1 ng-show="authenticated"> Hello, {{userDetail.cname}}</h1>
-    <div ng-show="authenticated">
+    <h1>{{projectDetail.pname}}</h1>
+    <div>
         <!--<img src="images/yeoman.png" alt="I'm Yeoman"><br>-->
-        <h4>email: {{userDetail.uemail}}</h4>
-        <h4>address: {{userDetail.address}}</h4>
+        <h4>By {{projectDetail.founder.cname}}</h4>
+        <p>{{projectDetail.status}}</p>
+        <p>Ends at {{projectDetail.extime}}</p>
+        <p>Minimum fund: {{projectDetail.minfund}}</p>
+        <p>Maximum fund: {{projectDetail.maxfund}}</p>
+        <p>{{projectDetail.pdescription}}</p>
+        <p ng-if="authenticated"><a class="btn btn-lg btn-danger" ng-click="vm.likeProject()"">Like me</a></p>
     </div>
+</div>
+
+<div class="row marketing" ng-show="authenticated">
+
+</div>
+
+<div class="row marketing">
+    <p>Who is funding this project?</p>
+    <table class="table table-striped">
+        <tr ng-repeat="p in pledges._embedded.allcombineds">
+            <td>{{p.plUemail}} pledged ${{ p.amount }}</td>
+        </tr>
+    </table>
+    <p>How do others think of this?</p>
+    <table class="table table-striped">
+        <tr ng-repeat="c in projectDetail.comments">
+            <td>{{ c.comment }}</td>
+        </tr>
+    </table>
+
 </div>

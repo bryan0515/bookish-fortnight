@@ -41,7 +41,7 @@
             <version>4.3.7.RELEASE</version>
         </dependency>
 
-        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager &ndash;&gt;-->
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
         <!--<dependency>-->
             <!--<groupId>org.hibernate</groupId>-->
             <!--<artifactId>hibernate-entitymanager</artifactId>-->

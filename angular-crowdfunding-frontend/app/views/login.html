@@ -8,8 +8,11 @@
     </div>
     <div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
       <label for="password">Password</label>
-      <input type="password" name="password" id="password" class="form-control" ng-model="vm.password" required />
+      <input type="password" name="password" id="password" class="form-control" ng-init="$cookies.password" ng-model="vm.password" required />
       <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" ng-model="vm.rememberMe" checked> Remember me</label>
     </div>
     <div class="form-actions">
       <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Login</button>

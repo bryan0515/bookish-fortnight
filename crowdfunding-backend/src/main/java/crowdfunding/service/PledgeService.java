@@ -5,6 +5,8 @@ import crowdfunding.repository.PledgeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by han on 5/9/17.
  */
@@ -17,4 +19,5 @@ public class PledgeService {
     public void addPledge(Pledge pledge) {
         pledgeRepository.save(pledge);
     }
+
 }

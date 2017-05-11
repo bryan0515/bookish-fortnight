@@ -19,6 +19,7 @@ angular.module('documentsApp')
         vm.project = [];
         vm.search = [];
         vm.ShowMeDate = ShowMeDate;
+        vm.toProject = toProject;
 
         vm.Search = Search;
         initController();
@@ -59,6 +60,11 @@ angular.module('documentsApp')
                     }
                     console.log($scope.author_group);
                 });
+        }
+
+        function toProject(pid) {
+            $rootScope.toProject = pid;
+            $location.path('/project');
         }
 
         function ShowMeDate(pname) {

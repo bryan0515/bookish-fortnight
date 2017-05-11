@@ -11,9 +11,14 @@
 angular.module('documentsApp')
   .controller('LoginController', LoginController);
 
-LoginController.$inject = ['$location', 'AuthenticationService', 'FlashService', '$rootScope'];
-function LoginController($location, AuthenticationService, FlashService, $rootScope) {
+LoginController.$inject = ['$location', 'AuthenticationService', 'FlashService', '$rootScope', '$cookies'];
+function LoginController($location, AuthenticationService, FlashService, $rootScope, $cookies) {
     var vm = this;
+
+    vm.username = $cookies.get('username');
+    vm.password = $cookies.get('password');
+    vm.rememberMe = $cookies.get('rememberMe');
+    vm.rememberMe = true;
 
     vm.login = login;
 
@@ -35,6 +40,13 @@ function LoginController($location, AuthenticationService, FlashService, $rootSc
                 AuthenticationService.SetCredentials(vm.username, vm.password);
                 $location.path('/');
                 $rootScope.authenticated = true;
+                if (vm.rememberMe === true) {
+                    $cookies.put('username', vm.username);
+                    $cookies.put('password', vm.password);
+                } else {
+                    $cookies.remove('username');
+                    $cookies.remove('password');
+                }
             } else {
                 FlashService.Error(response.message);
                 vm.dataLoading = false;

@@ -29,6 +29,9 @@ function UserService($http) {
 
     service.GetUserProject = GetUserProject;
     service.getProject = getProject;
+    service.GetProjectFounder = GetProjectFounder;
+
+    service.GetPledgeByProject = GetPledgeByProject;
 
     return service;
 
@@ -90,7 +93,7 @@ function UserService($http) {
         }).then(handleSuccess, handleError('Error creating project'));
     }
 
-    function GetProject() {
+    function GetProject(pid) {
         return $http.get('http://localhost:8080/fundingviews').then(handleSuccess, handleError('Error'));
     }
 
@@ -124,7 +127,18 @@ function UserService($http) {
         }
 
     function getProject(pid) {
-        var url = 'http://localhost:8080/projects/' + pid.toString();
+        var url = 'http://localhost:8080/projects/' + pid;
+        return $http.get(url).then(handleSuccess, handleError('Error'));
+    }
+
+    function GetProjectFounder(pid) {
+        var url = 'http://localhost:8080/projects/' + pid + '/customer';
+        return $http.get(url).then(handleSuccess, handleError('Error'));
+    }
+
+    // //pledge services
+    function GetPledgeByProject(pid) {
+        var url = 'http://localhost:8080/allcombineds/search/getAllByPid?pid=' + pid;
         return $http.get(url).then(handleSuccess, handleError('Error'));
     }
 

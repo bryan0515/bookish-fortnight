@@ -12,9 +12,7 @@ import java.util.Set;
 
 @Entity
 public class Customer {
-    //@Id
-    //@GeneratedValue(strategy= GenerationType.AUTO)
-//    @Column(name = "uemail", columnDefinition = "VARCHAR(40) default null ")
+
     @Id
     private String uemail;
     private String cname;
