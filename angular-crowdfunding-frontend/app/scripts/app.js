@@ -60,6 +60,11 @@ angular
               controller: 'CreateprojectCtrl',
               controllerAs: 'vm'
             })
+            .when('/project', {
+              templateUrl: 'views/project.html',
+              controller: 'ProjectCtrl',
+              controllerAs: 'vm'
+            })
             .otherwise({
                 redirectTo: '/'
             });

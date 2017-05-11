@@ -1,12 +1,9 @@
 package crowdfunding.controller;
 
-import com.sun.org.apache.regexp.internal.RE;
 import crowdfunding.entity.*;
 import crowdfunding.service.PledgeService;
 import crowdfunding.service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.jpa.repository.query.Jpa21Utils;
 import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

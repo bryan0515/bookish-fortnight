@@ -32,8 +32,6 @@ function CreateprojectCtrl(UserService, $rootScope, FlashService, $location) {
         console.log();
         vm.dateLoading = true;
 
-        UserService.CreateProject
-
         UserService.CreateProject(vm.project, $rootScope.username)
             .then(function (response) {
                 FlashService.Success('Create successful', true);
