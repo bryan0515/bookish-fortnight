@@ -34,7 +34,9 @@ public class PledgeController {
     public void register(@Param("pid")Long pid, @Param("amount")Float amount, @Param("uemail")String uemail) {
 
         Customer user = entityManager.find(Customer.class, uemail);
+
         Set<CreditCard> cards = user.getCreditcards();
+
         Project project = entityManager.find(Project.class, pid);
 
         CreditCard card = cards.iterator().next();

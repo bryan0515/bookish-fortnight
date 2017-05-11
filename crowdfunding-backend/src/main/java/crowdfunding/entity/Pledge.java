@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class Pledge {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long pledgeId;
 //    private Long pid;
 //    private String uemail;
@@ -30,8 +30,7 @@ public class Pledge {
 
     protected Pledge() {}
 
-    public Pledge(long pledgeId, Project project, Customer customer, CreditCard credit_card, float amount) {
-        this.pledgeId = pledgeId;
+    public Pledge(Project project, Customer customer, CreditCard credit_card, float amount) {
         this.project = project;
         this.customer = customer;
         this.credit_card = credit_card;
