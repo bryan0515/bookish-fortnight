@@ -104,7 +104,7 @@ function UserService($http) {
             params: {
                 pid: pid,
                 amount: amount,
-                username: username
+                uemail: username
             }
         }).then(newHandleSuccess, handleError('Error making a pledge'));
     }
