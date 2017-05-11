@@ -67,7 +67,7 @@ angular.module('documentsApp')
             $location.path('/project');
         }
 
-        function ShowMeDate(pname) {
+        function ShowMeDate(pid) {
             if ($rootScope.authenticated) {
                 console.log("HIHI ");
                 UserService.GetPledge(pid, vm.pledge.amount, $rootScope.username)
