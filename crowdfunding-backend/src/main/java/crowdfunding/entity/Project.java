@@ -2,6 +2,7 @@ package crowdfunding.entity;
 
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,6 +16,15 @@ public class Project {
     private long pid;
     private String pname;
     private String pdescription;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date extime;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date endtime;
+    private int minfund;
+    private int maxfund;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "status")
+    private ProjectStatus status;
 
     @ManyToOne
     @JoinColumn(name = "uemail")
@@ -23,8 +33,8 @@ public class Project {
     @OneToMany(mappedBy = "project")
     private Collection<Sample> samples = new HashSet<>();
 
-    @OneToMany(mappedBy = "requestId.project")
-    private Collection<Request> requests = new HashSet<>();
+    @OneToMany(mappedBy = "project")
+    private Collection<Pledge> pledges = new HashSet<>();
 
     @OneToMany(mappedBy = "projectComment")
     private Set<Comment> comments = new HashSet<>();
@@ -44,10 +54,21 @@ public class Project {
 
     protected Project(){}
 
-    public Project(String pname, String pdescription, Customer customer) {
+    public Project(long pid, String pname, String pdescription, Date extime, Date endtime, int minfund, int maxfund, ProjectStatus status, Customer customer, Collection<Sample> samples, Collection<Pledge> pledges, Set<Comment> comments, Collection<Label> labels, Set<Customer> customers) {
+        this.pid = pid;
         this.pname = pname;
         this.pdescription = pdescription;
+        this.extime = extime;
+        this.endtime = endtime;
+        this.minfund = minfund;
+        this.maxfund = maxfund;
+        this.status = status;
         this.customer = customer;
+        this.samples = samples;
+        this.pledges = pledges;
+        this.comments = comments;
+        this.labels = labels;
+        this.customers = customers;
     }
 
     public long getPid() {
@@ -57,14 +78,6 @@ public class Project {
     public void setPid(long pid) {
         this.pid = pid;
     }
-
-//    public String getUemail() {
-//        return uemail;
-//    }
-//
-//    public void setUemail(String uemail) {
-//        this.uemail = uemail;
-//    }
 
     public String getPname() {
         return pname;
@@ -82,6 +95,46 @@ public class Project {
         this.pdescription = pdescription;
     }
 
+    public Date getExtime() {
+        return extime;
+    }
+
+    public void setExtime(Date extime) {
+        this.extime = extime;
+    }
+
+    public Date getEndtime() {
+        return endtime;
+    }
+
+    public void setEndtime(Date endtime) {
+        this.endtime = endtime;
+    }
+
+    public int getMinfund() {
+        return minfund;
+    }
+
+    public void setMinfund(int minfund) {
+        this.minfund = minfund;
+    }
+
+    public int getMaxfund() {
+        return maxfund;
+    }
+
+    public void setMaxfund(int maxfund) {
+        this.maxfund = maxfund;
+    }
+
+    public ProjectStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(ProjectStatus status) {
+        this.status = status;
+    }
+
     public Customer getCustomer() {
         return customer;
     }
@@ -90,12 +143,20 @@ public class Project {
         this.customer = customer;
     }
 
-    public Set<Customer> getCustomers() {
-        return customers;
+    public Collection<Sample> getSamples() {
+        return samples;
     }
 
-    public void setCustomers(Set<Customer> customers) {
-        this.customers = customers;
+    public void setSamples(Collection<Sample> samples) {
+        this.samples = samples;
+    }
+
+    public Collection<Pledge> getPledges() {
+        return pledges;
+    }
+
+    public void setPledges(Collection<Pledge> pledges) {
+        this.pledges = pledges;
     }
 
     public Set<Comment> getComments() {
@@ -104,5 +165,21 @@ public class Project {
 
     public void setComments(Set<Comment> comments) {
         this.comments = comments;
+    }
+
+    public Collection<Label> getLabels() {
+        return labels;
+    }
+
+    public void setLabels(Collection<Label> labels) {
+        this.labels = labels;
+    }
+
+    public Set<Customer> getCustomers() {
+        return customers;
+    }
+
+    public void setCustomers(Set<Customer> customers) {
+        this.customers = customers;
     }
 }

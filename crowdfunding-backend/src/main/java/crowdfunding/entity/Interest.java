@@ -1,7 +1,5 @@
 package crowdfunding.entity;
 
-import crowdfunding.entity.Customer;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;

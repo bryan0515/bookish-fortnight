@@ -2,7 +2,6 @@ package crowdfunding.entity;
 /**
  * Created by han on 5/5/17.
  */
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
