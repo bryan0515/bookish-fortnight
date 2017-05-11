@@ -1,5 +1,6 @@
 package crowdfunding.repository;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import crowdfunding.entity.Project;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -22,4 +23,9 @@ public interface ProjectRepository extends JpaRepository<Project, Long>{
 //    @Query(value="SELECT p FROM Project p WHERE pid = 1")
 ////            "SELECT p FROM Project p INNER JOIN p.requestId r WHERE r.pid = :pid")
 //    Collection<Project> findProjectsByFundingAmount();
+//      @Query(value = "SELECT p FROM Project p WHERE p.pname = keyword")
+      Collection<Project> findProjectsByPdescriptionContaining(@Param("keyword") String keyword);
+
+
+//      Collection<Project> findByMinfundGreaterThan(int keyword);
 }

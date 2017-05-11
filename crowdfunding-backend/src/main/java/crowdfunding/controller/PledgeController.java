@@ -31,9 +31,20 @@ public class PledgeController {
 
     @RequestMapping(value = "/createPledge", method = RequestMethod.POST)
     @ResponseBody
-    public String register(@Param("pname")String pname, @Param("amount")Float amount, @Param("uemail")String uemail) {
+    public void register(@Param("pid")Long pid, @Param("amount")Float amount, @Param("uemail")String uemail) {
+
         Customer user = entityManager.find(Customer.class, uemail);
         Set<CreditCard> cards = user.getCreditcards();
+        Project project = entityManager.find(Project.class, pid);
+
+        CreditCard card = cards.iterator().next();
+
+//        for (CreditCard c : cards) {
+//            card = c;
+//            break;
+//        }
+
+        pledgeService.addPledge(new Pledge(project,user,card,amount));
 
 //        public List findA(String name) {
 //        return entityManager.createQuery("SELECT p FROM Project p Where p.pname = pname");
@@ -47,15 +58,10 @@ public class PledgeController {
 //        //Project project = entityManager.find(Project.class, pname);
 //        Request request = entityManager.find(Request.class, pid);
 //        Pledge pledge = entityManager.find(Pledge.class, request.getRequestId());
-        CreditCard card = null;
 
-//        for (CreditCard c : cards) {
-//            card = c;
-//            break;
-//        }
 //        return pledgeService.addPledge(new Pledge(pledge.getPledgeId(),card,amount));
 //        return "success";
-    return "";
+//    return "";
     }
 
 }

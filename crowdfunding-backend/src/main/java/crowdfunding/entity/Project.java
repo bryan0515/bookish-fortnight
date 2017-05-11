@@ -1,5 +1,6 @@
 package crowdfunding.entity;
 
+
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.Date;
@@ -54,8 +55,7 @@ public class Project {
 
     protected Project(){}
 
-    public Project(long pid, String pname, String pdescription, Date extime, Date endtime, int minfund, int maxfund, ProjectStatus status, Customer customer, Collection<Sample> samples, Collection<Pledge> pledges, Set<Comment> comments, Collection<Label> labels, Set<Customer> customers) {
-        this.pid = pid;
+    public Project(String pname, String pdescription, Date extime, Date endtime, int minfund, int maxfund, ProjectStatus status, Customer customer, Collection<Sample> samples, Collection<Pledge> pledges, Set<Comment> comments, Collection<Label> labels, Set<Customer> customers) {
         this.pname = pname;
         this.pdescription = pdescription;
         this.extime = extime;

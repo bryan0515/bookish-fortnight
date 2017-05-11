@@ -12,12 +12,15 @@ angular.module('documentsApp')
 
         var vm = this;
 
+        $scope.searched = false;
+
         vm.testdata = 'success!';
         vm.user = [];
         vm.project = [];
-
+        vm.search = [];
         vm.ShowMeDate = ShowMeDate;
 
+        vm.Search = Search;
         initController();
 
         function initController() {
@@ -61,8 +64,9 @@ angular.module('documentsApp')
         function ShowMeDate(pname) {
             if ($rootScope.authenticated) {
                 console.log("HIHI ");
-                UserService.GetPledge(pname, vm.pledge.amount, $rootScope.username)
+                UserService.GetPledge(pid, vm.pledge.amount, $rootScope.username)
                     .then(function (response) {
+
                         alert(response.success);
                     });
             } else {
@@ -75,10 +79,23 @@ angular.module('documentsApp')
         }
 
         $scope.addItem = function () {
-            //    var vm.pledge.pname = vm.x.pname;
-            //    alert(vm.pledge.amount);
-            //    alert(vm.pledge.pname);
+
         }
 
+        function Search() {
+            UserService.SearchProject(vm.keyword)
+                .then(function(response) {
+                    $scope.search = response._embedded.projects;
+                    $scope.searched = true;
+//                        alert(response.success);
+            });
+            //} else {
+            //   $location.path('/login');
+            //}
+            console.log(vm.keyword);
+//            var x = angular.element(document.querySelector('myInput'));
+//            alert(x);
+//            documentsApp.getElementById("demo").innerHTML = x;
+        }
 
     });

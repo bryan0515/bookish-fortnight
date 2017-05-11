@@ -9,13 +9,15 @@ import javax.persistence.*;
 public class Pledge {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE)
     private Long pledgeId;
+//    private Long pid;
+//    private String uemail;
 
     @ManyToOne
     @JoinColumn(name = "pid")
     private Project project;
-    //TODO: Map to customer_credit_card
+
     @ManyToOne
     @JoinColumn(name = "uemail")
     private Customer customer;
@@ -23,11 +25,12 @@ public class Pledge {
     @ManyToOne
     @JoinColumn(name = "credit_card")
     private CreditCard credit_card;
+
     private float amount;
 
     protected Pledge() {}
 
-    public Pledge(Long pledgeId, Project project, Customer customer, CreditCard credit_card, float amount) {
+    public Pledge(long pledgeId, Project project, Customer customer, CreditCard credit_card, float amount) {
         this.pledgeId = pledgeId;
         this.project = project;
         this.customer = customer;
@@ -74,13 +77,12 @@ public class Pledge {
     public void setAmount(float amount) {
         this.amount = amount;
     }
-
-    @Override
-    public String toString() {
-        return "Pledge{" +
-                "pledgeId=" + pledgeId +
-                ", credit_card=" + credit_card +
-                ", amount=" + amount +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Pledge{" +
+//                "pledgeId=" + pledgeId +
+//                ", credit_card=" + credit_card +
+//                ", amount=" + amount +
+//                '}';
+//    }
 }
