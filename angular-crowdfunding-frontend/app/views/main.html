@@ -45,9 +45,9 @@
         <th>Pledge!!</th>
       </tr>
       <!--<div ng-repeat="project in author_group" class="authorAndTagGroup">-->
-      <tr ng-repeat="(key, x) in project">
+      <tr ng-repeat="x in project">
         <!--<label class="col-sm-3 control-label">{{key}}</label>-->
-        <td>{{ x.pname }}</td>
+        <td ng-click="vm.toProject(x.pid)">{{ x.pname }}</td>
         <td>{{ x.endtime }}</td>
         <td>{{ x.minfund }}</td>
         <td>{{ x.curfund }}</td>

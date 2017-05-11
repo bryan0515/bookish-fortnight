@@ -17,6 +17,7 @@ angular.module('documentsApp')
         vm.project = [];
 
         vm.ShowMeDate = ShowMeDate;
+        vm.toProject = toProject;
 
         initController();
 
@@ -56,6 +57,11 @@ angular.module('documentsApp')
                     }
                     console.log($scope.author_group);
                 });
+        }
+
+        function toProject(pid) {
+            $rootScope.toProject = pid;
+            $location.path('/project');
         }
 
         function ShowMeDate(pname) {

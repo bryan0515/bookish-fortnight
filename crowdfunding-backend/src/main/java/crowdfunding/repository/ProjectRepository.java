@@ -22,4 +22,10 @@ public interface ProjectRepository extends JpaRepository<Project, Long>{
 //    @Query(value="SELECT p FROM Project p WHERE pid = 1")
 ////            "SELECT p FROM Project p INNER JOIN p.requestId r WHERE r.pid = :pid")
 //    Collection<Project> findProjectsByFundingAmount();
+
+    @Query(value="SELECT p FROM Project p WHERE p.pdescription like CONCAT('%', :search, '%')")
+    Collection<Project> searchProjectWithNativeQuery(@Param("search") String search);
+
+    Collection<Project> findProjectsByPdescriptionContaining(@Param("search") String search);
+
 }

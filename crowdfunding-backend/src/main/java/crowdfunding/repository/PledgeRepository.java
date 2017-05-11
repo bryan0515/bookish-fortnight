@@ -9,6 +9,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by bryancheng on 2017/5/6.
@@ -30,4 +31,7 @@ public interface PledgeRepository extends JpaRepository<Pledge, Long> {
 ////        "SELECT p FROM Pledge p WHERE (cast(p.amount as double)/POW(10,p.amountPrecision)) < :amount")
 //        "SELECT p FROM Pledge p WHERE p.amount > :amount")
 //    Collection<Pledge> findPledgeByAmount(@Param("amount") float amount);
+
+//    @Query(value = "SELECT * FROM Pledges NATURAL JOIN Customers WHERE pid = ?1", nativeQuery = true)
+//    List<Pledge> getProjectPlegesWithFonder(long pid);
 }

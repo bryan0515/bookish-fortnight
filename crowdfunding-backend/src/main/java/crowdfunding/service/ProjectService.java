@@ -15,15 +15,8 @@ public class ProjectService {
     @Autowired
     private ProjectRepository projectRepository;
 
-//    @Autowired
-//    private RequestRepository requestRepository;
-
     public Long createProject(Project project) {
         projectRepository.save(project);
         return project.getPid();
     }
-
-//    public void createRequest(Request request) {
-//        requestRepository.save(request);
-//    }
 }

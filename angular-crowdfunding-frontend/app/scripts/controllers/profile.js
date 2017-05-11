@@ -8,7 +8,7 @@
  * Controller of the documentsApp
  */
 angular.module('documentsApp')
-    .controller('ProfileCtrl', function ($scope, $q, $rootScope, UserService, $location) {
+    .controller('ProfileCtrl', function ($scope, $q, $rootScope, UserService, $location, $http) {
 
         var vm = this;
 
@@ -20,6 +20,7 @@ angular.module('documentsApp')
             if ($scope.authenticated) {
                 getUserDetails();
                 getUserProject();
+                getProjectsUserLikes();
             } else {
                 $location.path('/login');
             }
@@ -46,6 +47,17 @@ angular.module('documentsApp')
                 }, function () {
                     $scope.userProject = "Connection Failed";
                 });
+        }
+
+        function getProjectsUserLikes() {
+            $http({
+                url: 'http://localhost:8080/customers/' + $rootScope.username + '/projectsLike',
+                method: 'GET'
+            }).then(function (response) {
+                $scope.projectsUserLikes = response.data._embedded.projects;
+            }, function () {
+                console.log('error queried like');
+            })
         }
 
     });
