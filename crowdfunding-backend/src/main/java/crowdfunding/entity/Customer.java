@@ -32,7 +32,7 @@ public class Customer {
     @JoinTable(name = "Customer_phone", joinColumns = @JoinColumn(name = "uemail", referencedColumnName = "uemail"),inverseJoinColumns = @JoinColumn(name = "phone",referencedColumnName = "phone"))
     private Set<Phone> phones = new HashSet<>();
 
-    @OneToMany(mappedBy = "pledgeId.customer")
+    @OneToMany(mappedBy = "customer")
     private Collection<Pledge> pledges;
 
     @OneToMany(mappedBy = "followId.customer")

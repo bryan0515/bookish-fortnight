@@ -14,11 +14,10 @@ public class Fundingview implements Serializable{
     private static final long serialVersionUID = 1L;
 
     @Id
-    private Long pid;
+    private Long pledge_id;
 
     @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date sttime;
+    private Long pid;
     @Temporal(TemporalType.TIMESTAMP)
     private Date extime;
     @Temporal(TemporalType.TIMESTAMP)
@@ -28,12 +27,13 @@ public class Fundingview implements Serializable{
     private String status;
     private int curfund;
     private String pname;
+    private String pdescription;
     private double percentage;
     protected Fundingview() {}
 
-    public Fundingview(Long pid, Date sttime, Date extime, Date endtime, int minfund, int maxfund, String status, int curfund, String pname, double percentage) {
+    public Fundingview(Long pledge_id, Long pid, Date extime, Date endtime, int minfund, int maxfund, String status, int curfund, String pname, String pdescription, double percentage) {
+        this.pledge_id = pledge_id;
         this.pid = pid;
-        this.sttime = sttime;
         this.extime = extime;
         this.endtime = endtime;
         this.minfund = minfund;
@@ -41,11 +41,20 @@ public class Fundingview implements Serializable{
         this.status = status;
         this.curfund = curfund;
         this.pname = pname;
+        this.pdescription = pdescription;
         this.percentage = percentage;
     }
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
+    }
+
+    public Long getPledge_id() {
+        return pledge_id;
+    }
+
+    public void setPledge_id(Long pledge_id) {
+        this.pledge_id = pledge_id;
     }
 
     public Long getPid() {
@@ -54,14 +63,6 @@ public class Fundingview implements Serializable{
 
     public void setPid(Long pid) {
         this.pid = pid;
-    }
-
-    public Date getSttime() {
-        return sttime;
-    }
-
-    public void setSttime(Date sttime) {
-        this.sttime = sttime;
     }
 
     public Date getExtime() {
@@ -118,6 +119,14 @@ public class Fundingview implements Serializable{
 
     public void setPname(String pname) {
         this.pname = pname;
+    }
+
+    public String getPdescription() {
+        return pdescription;
+    }
+
+    public void setPdescription(String pdescription) {
+        this.pdescription = pdescription;
     }
 
     public double getPercentage() {
