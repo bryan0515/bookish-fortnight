@@ -4,11 +4,11 @@
         <!--<img src="images/yeoman.png" alt="I'm Yeoman"><br>-->
         <h4>By {{projectDetail.founder.cname}}</h4>
         <p>{{projectDetail.status}}</p>
-        <p>Ends at {{projectDetail.extime}}</p>
+        <p>Ends at {{projectDetail.extime| date: 'yyyy-MM-dd'}}</p>
         <p>Minimum fund: {{projectDetail.minfund}}</p>
         <p>Maximum fund: {{projectDetail.maxfund}}</p>
         <p>{{projectDetail.pdescription}}</p>
-        <p ng-if="authenticated"><a class="btn btn-lg btn-danger" ng-click="vm.likeProject()"">Like me</a></p>
+        <p ng-if="authenticated"><a class="btn btn-lg btn-danger" ng-click="vm.likeProject()">Like me</a></p>
     </div>
 </div>
 
@@ -17,17 +17,33 @@
 </div>
 
 <div class="row marketing">
+    <!--Pledge-->
     <p>Who is funding this project?</p>
     <table class="table table-striped">
         <tr ng-repeat="p in pledges._embedded.allcombineds">
             <td>{{p.plUemail}} pledged ${{ p.amount }}</td>
         </tr>
     </table>
+    <form name="form" ng-submit="vm.pledge()" role="form" ng-show="authenticated">
+        <div class="form-group" ng-class="{ 'has-error': form.amount.$dirty && form.amount.$error.required }">
+            <input type="number" name="amount" id="amount" class="form-control" ng-model="vm.amount" required />
+            <span ng-show="form.amount.$dirty && form.amount.$error.required" class="help-block">Invalid amount</span>
+        </div>
+        <button type="submit" class="btn btn-primary">Pledge</button>
+    </form>
+    <!--Comment-->
     <p>How do others think of this?</p>
     <table class="table table-striped">
         <tr ng-repeat="c in projectDetail.comments">
             <td>{{ c.comment }}</td>
         </tr>
     </table>
+    <form name="form" ng-submit="vm.comment()" role="form" ng-show="authenticated">
+        <div class="form-group" ng-class="{ 'has-error': form.comment.$dirty && form.comment.$error.required }">
+            <input type="text" name="comment" id="comment" class="form-control" ng-model="vm.insertComment" required />
+            <span ng-show="form.comment.$dirty && form.comment.$error.required" class="help-block">Nothing entered</span>
+        </div>
+        <button type="submit" class="btn btn-primary">Comment</button>
+    </form>
 
 </div>

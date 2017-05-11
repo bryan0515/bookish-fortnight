@@ -11,28 +11,14 @@
     <p ng-if="authenticated"><a class="btn btn-lg btn-danger" ng-href="#!/login">Logout</a></p>
 </div>
 
-<!--<div class="row marketing">-->
-    <!--<h4>HTML5 Boilerplate</h4>-->
-    <!--<p>-->
-        <!--HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or-->
-        <!--sites.-->
-    <!--</p>-->
-
-    <!--<h4>Angular</h4>-->
-    <!--<p>-->
-        <!--AngularJS is a toolset for building the framework most suited to your application development.-->
-    <!--</p>-->
-
-    <!--<h4>Karma</h4>-->
-    <!--<p>Spectacular Test Runner for JavaScript.</p>-->
-<!--</div>-->
-
 <h3>My Search</h3>
 <form name = "search_form" ng-submit="vm.Search()">
 
     <input type = "text" name = "keyword" id = "keyword" class="form-control"  ng-model="vm.keyword" placeholder="Search for names.." title="Type in a name">
     <input class="btn btn-primary" type="submit" value = "Search" ng-click="vm.Search()"/>
 </form>
+
+<!--Searched Project-->
 <div class="row marketing" ng-show="searched">
     <h4>{{"Search Result:"}}</h4>
 
@@ -50,9 +36,9 @@
             <!--<div ng-repeat="project in author_group" class="authorAndTagGroup">-->
             <tr ng-repeat="y in search">
                 <!--<label class="col-sm-3 control-label">{{key}}</label>-->
-                <td>{{ y.pname }}</td>
+                <td ng-click="vm.toProject(y.pid)">{{ y.pname }}</td>
                 <td>{{ y.pdescription }}</td>
-                <td>{{ y.endtime }}</td>
+                <td>{{ y.endtime | date: 'yyyy-MM-dd'}}</td>
                 <td>{{ y.minfund }}</td>
                 <td>{{ y.status }}</td>
             </tr>
@@ -61,10 +47,10 @@
     <!--</li>-->
 </div>
 
-
+<!--Popular Projects-->
 <div class="row marketing" ng-show="!searched">
   <h4>Popular Projects!!</h4>
-  <p>Here is the test data: </p>
+  <!--<p>Here is the test data: </p>-->
   <!--<p>{{vm.testdata}}</p>-->
     <!--<li ng-repeat="u in user">-->
     <!--<li ng-repeat="x in project">-->
@@ -83,7 +69,7 @@
       <tr ng-repeat="x in project">
         <!--<label class="col-sm-3 control-label">{{key}}</label>-->
         <td ng-click="vm.toProject(x.pid)">{{ x.pname }}</td>
-        <td>{{ x.endtime }}</td>
+        <td>{{ x.endtime | date: 'yyyy-MM-dd'}}</td>
         <td>{{ x.minfund }}</td>
         <td>{{ x.curfund }}</td>
         <td>{{ x.percentage }}</td>
@@ -91,7 +77,7 @@
         <td>
           <form name = "test_form" ng-submit="addItem()">
             Amount:
-            <input type = "number" name = "amount" id = "amount" class="form-control" ng-init="vm.pledge.amount = 10" ng-model="vm.pledge.amount">
+            <input type = "number" name = "amount" id = "amount" class="form-control" ng-init="vm.pledge.amount = 0" ng-model="vm.pledge.amount">
             <!--<input type="hidden" name="pid" value={{x.pid}}>-->
             <input type="hidden" name="pname" id = "pname" value="{{x.pname}}" class="form-control" ng-model = "vm.pledge.pname">
               <input type="hidden" name="pid" id = "pid" value="{{x.pid}}" class="form-control" ng-model = "vm.pledge.pid">
