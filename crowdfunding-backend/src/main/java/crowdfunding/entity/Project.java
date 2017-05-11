@@ -20,8 +20,8 @@ public class Project {
     private Date extime;
     @Temporal(TemporalType.TIMESTAMP)
     private Date endtime;
-    private int minfund;
-    private int maxfund;
+    private float minfund;
+    private float maxfund;
     @Enumerated(EnumType.STRING)
     @Column(name = "status")
     private ProjectStatus status;
@@ -54,7 +54,7 @@ public class Project {
 
     protected Project(){}
 
-    public Project(String pname, String pdescription, Date extime, Date endtime, int minfund, int maxfund, ProjectStatus status, Customer customer) {
+    public Project(String pname, String pdescription, Date extime, Date endtime, float minfund, float maxfund, ProjectStatus status, Customer customer) {
         this.pname = pname;
         this.pdescription = pdescription;
         this.extime = extime;
@@ -105,19 +105,19 @@ public class Project {
         this.endtime = endtime;
     }
 
-    public int getMinfund() {
+    public float getMinfund() {
         return minfund;
     }
 
-    public void setMinfund(int minfund) {
+    public void setMinfund(float minfund) {
         this.minfund = minfund;
     }
 
-    public int getMaxfund() {
+    public float getMaxfund() {
         return maxfund;
     }
 
-    public void setMaxfund(int maxfund) {
+    public void setMaxfund(float maxfund) {
         this.maxfund = maxfund;
     }
 

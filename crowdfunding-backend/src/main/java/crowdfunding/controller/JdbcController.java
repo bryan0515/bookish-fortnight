@@ -20,4 +20,9 @@ public class JdbcController {
     public void likeProject(@Param("pid") long pid, @Param("uemail")String uemail) {
         jdbcTemplate.update("INSERT INTO `Likes` VALUES (?, ?)", new Object[] {pid, uemail});
     }
+
+    @RequestMapping(value = "/commentProject", method = RequestMethod.POST)
+    public void commentProject(@Param("pid") long pid, @Param("uemail") String uemail, @Param("comment") String comment) {
+        jdbcTemplate.update("INSERT INTO `Comment` VALUES (?, ?, DEFAULT,?)", new Object[] {pid, uemail, comment});
+    }
 }
