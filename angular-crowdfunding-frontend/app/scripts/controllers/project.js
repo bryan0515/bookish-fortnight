@@ -23,7 +23,6 @@ angular.module('documentsApp')
                 $location.path('/');
             } else {
                 getProject();
-                getProjectFounder();
                 getPledgeByProject();
             }
         }
@@ -43,13 +42,6 @@ angular.module('documentsApp')
             $q.when(UserService.getProject($rootScope.toProject))
                 .then(function (response) {
                     $scope.projectDetail = response;
-                }, $scope.projectDetail = 'error');
-        }
-
-        function getProjectFounder() {
-            $q.when(UserService.GetProjectFounder($rootScope.toProject))
-                .then(function (response) {
-                    $scope.projectDetail.founder = response;
                 }, $scope.projectDetail = 'error');
         }
 

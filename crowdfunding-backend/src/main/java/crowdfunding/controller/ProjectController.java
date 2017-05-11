@@ -33,8 +33,8 @@ public class ProjectController {
             @Param("pdescription") String pdescription,
             @Param("uemail") String uemail,
             @Param("extime") @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.sss'Z'") Date extime,
-            @Param("minfund") int minfund,
-            @Param("maxfund") int maxfund) {
+            @Param("minfund") float minfund,
+            @Param("maxfund") float maxfund) {
 
         Customer customer = entityManager.find(Customer.class, uemail);
 

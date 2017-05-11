@@ -8,7 +8,7 @@ import java.util.Date;
  */
 @Entity
 public class Allcombined {
-    @Id
+
     private String uemail;
     private String cname;
     private String password;
@@ -20,18 +20,21 @@ public class Allcombined {
     private Date extime;
     @Temporal(TemporalType.TIMESTAMP)
     private Date endtime;
-    private Integer minfund;
-    private Integer maxfund;
+    private float minfund;
+    private float maxfund;
     private String status;
+    @Id
     private Long pledgeId;
     private String plUemail;
     private String creditCard;
     private Integer amount;
+    private String rateEmail;
     private Integer rate;
 
-    protected Allcombined(){}
+    protected Allcombined() {
+    }
 
-    public Allcombined(String uemail, String cname, String password, String address, Long pid, String pname, String pdescription, Date extime, Date endtime, Integer minfund, Integer maxfund, String status, Long pledgeId, String plUemail, String creditCard, Integer amount, Integer rate) {
+    public Allcombined(String uemail, String cname, String password, String address, Long pid, String pname, String pdescription, Date extime, Date endtime, float minfund, float maxfund, String status, Long pledgeId, String plUemail, String creditCard, Integer amount, String rateEmail, Integer rate) {
         this.uemail = uemail;
         this.cname = cname;
         this.password = password;
@@ -48,6 +51,7 @@ public class Allcombined {
         this.plUemail = plUemail;
         this.creditCard = creditCard;
         this.amount = amount;
+        this.rateEmail = rateEmail;
         this.rate = rate;
     }
 
@@ -123,19 +127,19 @@ public class Allcombined {
         this.endtime = endtime;
     }
 
-    public Integer getMinfund() {
+    public float getMinfund() {
         return minfund;
     }
 
-    public void setMinfund(Integer minfund) {
+    public void setMinfund(float minfund) {
         this.minfund = minfund;
     }
 
-    public Integer getMaxfund() {
+    public float getMaxfund() {
         return maxfund;
     }
 
-    public void setMaxfund(Integer maxfund) {
+    public void setMaxfund(float maxfund) {
         this.maxfund = maxfund;
     }
 
@@ -177,6 +181,14 @@ public class Allcombined {
 
     public void setAmount(Integer amount) {
         this.amount = amount;
+    }
+
+    public String getRateEmail() {
+        return rateEmail;
+    }
+
+    public void setRateEmail(String rateEmail) {
+        this.rateEmail = rateEmail;
     }
 
     public Integer getRate() {

@@ -32,7 +32,7 @@ class SpringDataRestConfig {
             @Override
             public void configureRepositoryRestConfiguration(
                     RepositoryRestConfiguration config) {
-                config.exposeIdsFor(Pledge.class, Customer.class, Project.class);
+                config.exposeIdsFor(Allcombined.class, Pledge.class, Customer.class, Project.class);
             }
         };
 
