@@ -78,30 +78,19 @@ angular.module('documentsApp')
             } else {
                 $location.path('/login');
             }
-            //    alert(vm.pledge.amount);
-            //    alert(pname);
-
-
-        }
-
-        $scope.addItem = function () {
-
         }
 
         function Search() {
-            UserService.SearchProject(vm.keyword)
-                .then(function(response) {
-                    $scope.search = response._embedded.projects;
-                    $scope.searched = true;
-//                        alert(response.success);
-            });
-            //} else {
-            //   $location.path('/login');
-            //}
-            console.log(vm.keyword);
-//            var x = angular.element(document.querySelector('myInput'));
-//            alert(x);
-//            documentsApp.getElementById("demo").innerHTML = x;
+            if (vm.keyword ==='') {
+                $scope.searched = false;
+                loadProject();
+            } else {
+                UserService.SearchProject(vm.keyword)
+                    .then(function (response) {
+                        $scope.search = response._embedded.projects;
+                        $scope.searched = true;
+                    });
+            }
         }
 
     });

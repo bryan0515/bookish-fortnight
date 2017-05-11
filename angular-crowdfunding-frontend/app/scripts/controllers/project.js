@@ -8,10 +8,13 @@
  * Controller of the documentsApp
  */
 angular.module('documentsApp')
-    .controller('ProjectCtrl', function (UserService, $rootScope, $scope, $location, $q, $http) {
+    .controller('ProjectCtrl', function (UserService, $rootScope, $scope, $location, $q, $http, $route) {
         var vm = this;
 
         vm.likeProject = likeProject;
+
+        vm.pledge = pledge;
+        vm.comment = comment;
 
         init();
 
@@ -60,5 +63,22 @@ angular.module('documentsApp')
                 });
         }
 
+        function pledge() {
+            if ($rootScope.authenticated) {
+                UserService.GetPledge($rootScope.toProject, vm.amount, $rootScope.username)
+                    .then(function (response) {
+                        getPledgeByProject();
+                    });
+            }
+        }
+
+        function comment() {
+            if ($rootScope.authenticated) {
+                UserService.CreateComment($rootScope.toProject, $rootScope.username, vm.insertComment)
+                    .then(function (response) {
+                        getProject();
+                    });
+            }
+        }
 
     });

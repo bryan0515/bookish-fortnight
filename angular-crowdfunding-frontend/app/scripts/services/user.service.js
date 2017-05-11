@@ -32,6 +32,7 @@ function UserService($http) {
     service.GetProjectFounder = GetProjectFounder;
 
     service.GetPledgeByProject = GetPledgeByProject;
+    service.CreateComment = CreateComment;
 
     return service;
 
@@ -97,18 +98,6 @@ function UserService($http) {
         return $http.get('http://localhost:8080/fundingviews').then(handleSuccess, handleError('Error'));
     }
 
-    function GetPledge(pid, amount, username) {
-        return $http({
-            url: 'http://localhost:8080/createPledge',
-            method: "POST",
-            params: {
-                pid: pid,
-                amount: amount,
-                username: username
-            }
-        }).then(newHandleSuccess, handleError('Error making a pledge'));
-    }
-
     function GetUserProject(username) {
         var url = 'http://localhost:8080/customers/' + username + '/projects';
         return $http.get(url).then(handleSuccess, handleError('Error'));
@@ -138,8 +127,32 @@ function UserService($http) {
 
     // //pledge services
     function GetPledgeByProject(pid) {
-        var url = 'http://localhost:8080/allcombineds/search/getAllByPid?pid=' + pid;
+        var url = 'http://localhost:8080/allcombineds/search/getAllcombinedsByPid?pid=' + pid;
         return $http.get(url).then(handleSuccess, handleError('Error'));
+    }
+
+    function GetPledge(pid, amount, username) {
+        return $http({
+            url: 'http://localhost:8080/createPledge',
+            method: "POST",
+            params: {
+                pid: pid,
+                amount: amount,
+                uemail: username
+            }
+        }).then(newHandleSuccess, handleError('Error making a pledge'));
+    }
+
+    function CreateComment(pid, username, comment) {
+        return $http({
+            url: 'http://localhost:8080/commentProject',
+            method: "POST",
+            params: {
+                pid: pid,
+                uemail: username,
+                comment: comment
+            }
+        }).then(newHandleSuccess, handleError('Error making a pledge'));
     }
 
     // private functions
