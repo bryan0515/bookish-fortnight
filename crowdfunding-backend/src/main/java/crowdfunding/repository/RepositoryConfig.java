@@ -1,8 +1,6 @@
 package crowdfunding.repository;
 
-import crowdfunding.entity.Pledge;
-import crowdfunding.entity.Request;
-import crowdfunding.entity.RequestId;
+import crowdfunding.entity.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -34,7 +32,7 @@ class SpringDataRestConfig {
             @Override
             public void configureRepositoryRestConfiguration(
                     RepositoryRestConfiguration config) {
-                config.exposeIdsFor(Request.class, Pledge.class);
+                config.exposeIdsFor(Request.class, Pledge.class, Customer.class, Project.class);
             }
         };
 

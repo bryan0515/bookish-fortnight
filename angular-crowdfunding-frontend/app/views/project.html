@@ -6,15 +6,3 @@
         <h4>address: {{userDetail.address}}</h4>
     </div>
 </div>
-
-<div class="row marketing" ng-repeat="x in userProject">
-    <h4 ng-click="vm.toProject(x.pid)">{{x.pname}}</h4>
-    <p>
-        {{x.pdescription}}
-    </p>
-    <table class="table table-striped">
-        <tr ng-repeat="c in x.comments">
-            <td>{{ c.comment }}</td>
-        </tr>
-    </table>
-</div>
