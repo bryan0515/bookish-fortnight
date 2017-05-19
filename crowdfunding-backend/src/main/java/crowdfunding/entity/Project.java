@@ -1,10 +1,7 @@
 package crowdfunding.entity;
 
 import javax.persistence.*;
-import java.util.Collection;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by bryancheng on 2017/5/3.
@@ -38,6 +35,9 @@ public class Project {
 
     @OneToMany(mappedBy = "projectComment")
     private Set<Comment> comments = new HashSet<>();
+
+    @OneToMany(mappedBy = "project")
+    private Collection<Logdetail> logdetails = new ArrayList<>();
 
     @ManyToMany
     @JoinTable(name = "Project_label",
