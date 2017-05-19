@@ -34,6 +34,8 @@ function UserService($http) {
     service.GetPledgeByProject = GetPledgeByProject;
     service.CreateComment = CreateComment;
 
+    service.CreateLog = CreateLog;
+
     return service;
 
 
@@ -151,6 +153,19 @@ function UserService($http) {
                 pid: pid,
                 uemail: username,
                 comment: comment
+            }
+        }).then(newHandleSuccess, handleError('Error making a pledge'));
+    }
+
+    // logdetail
+
+    function CreateLog(pid, username) {
+        return $http({
+            url: 'http://localhost:8080/getLog',
+            method: "POST",
+            params: {
+                pid: pid,
+                uemail: username
             }
         }).then(newHandleSuccess, handleError('Error making a pledge'));
     }

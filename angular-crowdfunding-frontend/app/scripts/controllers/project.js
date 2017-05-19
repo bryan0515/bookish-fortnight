@@ -43,6 +43,7 @@ angular.module('documentsApp')
                 .then(function (response) {
                     $scope.projectDetail = response;
                 }, $scope.projectDetail = 'error');
+            UserService.CreateLog($rootScope.toProject, $rootScope.username);
         }
 
         function getPledgeByProject() {
